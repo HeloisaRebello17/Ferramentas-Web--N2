@@ -1,6 +1,4 @@
 <p align="center">
- <img width="100px" src="file:///C:/Users/USER/Downloads/Design-sem-nome-_1_.webp" align="center" margin="0px" alt="Github Readme Stats" />
-
  <div>
   <h2 align="center">
   Money Map</h2>
@@ -16,7 +14,7 @@
  Sobre nós
  </h1>
  <p>
-             O projeto consiste em desenvolver uma plataforma de gerenciamento financeiro, projetada para ajudar os usuários a administrar seus gastos, ganhos e despesas com cartão de crédito. A plataforma permite aos usuários inserir manualmente todo o seu histórico financeiro, incluindo gastos e receitas, fornecendo uma visão detalhada de suas finanças por meio de gráficos intuitivos. Com essa ferramenta, os usuários podem manter um controle financeiro eficaz e tomar decisões informadas sobre suas finanças pessoais.
+O projeto consiste em desenvolver uma plataforma de gerenciamento financeiro, projetada para ajudar os usuários a administrar seus gastos, ganhos e despesas com cartão de crédito. A plataforma permite aos usuários inserir manualmente todo o seu histórico financeiro, incluindo gastos e receitas, fornecendo uma visão detalhada de suas finanças por meio de gráficos intuitivos. Com essa ferramenta, os usuários podem manter um controle financeiro eficaz e tomar decisões informadas sobre suas finanças pessoais.
  </p>
  </div>
 <div style="display: inline_block"><br>
