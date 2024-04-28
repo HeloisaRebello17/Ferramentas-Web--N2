@@ -1,5 +1,5 @@
 <p align="center">
- <img width="100px" src="https://files.fm/f/8m949hh3yp" align="center" margin="0px" alt="Github Readme Stats" />
+ <img width="100px" src="file:///C:/Users/USER/Downloads/Design-sem-nome-_1_.webp" align="center" margin="0px" alt="Github Readme Stats" />
 
  <div>
   <h2 align="center">
