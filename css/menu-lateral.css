@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    height: 900vh;
+    background-color: #EAEAEA;
+}
+
+.logo-container .logo {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 15px;
+    margin-top: -5px;
+}
+
+.logo {
+    height: 40px;
+    width: 55px;
+}
+
+.btn {
+    width: 29px;
+    height: 29px;
+    border-radius: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 11px;
+    margin-bottom: 5px;
+    background-color: #D9D9D9;
+    border: none;
+}
+
+.icon-btn {
+    font-size: 27px;
+    color:white;
+}
+.texto-botao {
+    display: none;
+    color:white;
+    font-size:15px;
+
+    justify-content: center;
+    flex-direction: row;
+    margin-left:10px
+}
+
+
+.menu-expandido .texto-botao {
+    display: inline-block;
+    /* Aparece quando o menu está expandido */
+}
+.menu-expandido .btn{
+    width:120px;
+    height:35px;
+}
+nav.menu-lateral {
+    width: 83px;
+    height: 100%;
+    background-color: white;
+    padding: 40px 0 40px 1%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir {
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 47px;
+    margin-top: 5px;
+    position: relative;
+    transition: left 0.5s ease;
+}
+
+nav.menu-lateral.expandir .btn-expandir {
+    left: 200px;
+    transition: .5s;
+    /* Nova posição quando o menu é expandido */
+}
+
+.btn-expandir>i {
+    color: black;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.expandir .btn-expandir i::before {
+    content: '\F284';
+    /* Ícone para quando expandido */
+
+}
+
+.nao-expandir .btn-expandir i::before {
+    content: '\f359';
+    transition: .5s;
+    /* Ícone para quando não expandido */
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu {
+    transition: .2s;
+    position: relative;
+    padding-left: 10px;
+}
+
+ul li.item-menu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -14px;
+    right: 100%;
+    width: 5px;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+ul li.item-menu.ativo::before {
+    background-color: #99CB85;
+}
+
+ul li.item-menu.ativo a .text-link {
+    color: #99CB85;
+}
+
+ul li.item-menu.ativo a .icon i {
+    color: #99CB85;
+}
+
+ul li.item-menu a {
+    color: black;
+    text-decoration: none;
+    padding: 20px 4%;
+    font-size: 18px;
+    display: flex;
+    margin-bottom: 7px;
+    line-height: 40px;
+
+}
+
+ul li.item-menu a .text-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+    white-space: nowrap;
+
+}
+
+nav.menu-lateral.expandir .text-link {
+    margin-left: 40px;
+    opacity: 1;
+
+}
+
+ul li.item-menu a .text-link:hover {
+    color: #99CB85;
+
+}
+
+ul li.item-menu a .icon {
+    font-size: 22px;
+
+}
