@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas-web</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="Conta.css">
+    
+</head>
+
+<body>
+   
+    <nav class="menu-lateral">
+        <div class="logo-container">
+            <img class="logo" src="logo.png" alt="">
+        </div>
+        <div class="btn-container" id="btn-container">
+            
+            <button class="btn" id="btn">
+                <span class="icon-btn"><i class="bi bi-plus" id="btn-icon"></i></span>
+           <span class="texto-botao">Novo</span>
+        
+            </button>
+        </div>
+        <div class="btn-expandir">
+            <i class="bi bi-chevron-right" id='btn-exp'></i>
+        </div><!--container do botão de expandir-->
+         <ul>
+            <li class="item-menu ativo">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-house-door"></i></span>
+                    <span class="text-link">Página Inicial</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-bank"></i></span>
+                    <span class="text-link">Contas</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-list-ul"></i></span>
+                    <span class="text-link">Transações</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-credit-card"></i></span>
+                    <span class="text-link">Cartões de Crédito</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-gear"></i></span>
+                    <span class="text-link">Configurações</span>
+                </a> 
+            </li>     
+           
+         </ul>     
+    </nav><!--container do sidebar-->
+
+    <script src="js/Menu.js"></script>
+
+    <!--codigo da pagina a partir daqui-->
+
+    <h1 class="title">CONTAS</h1>
+
+    <div class="container">
+        <div class="elemento">
+            <h1 class="icone"><i class="bi bi-plus-circle"></i></h1>
+            <p>NOVA CONTA</p>
+        </div>
+
+        <div class="child">
+            <h1 class="icon2"><i class="bi bi-coin"></i></h1>
+            <p>SALDO ATUAL</p>
+            <h1 class="valor">R$: 0,00</h1>
+           
+        </div>
+
+        <div class="child">
+            <h1 class="icon3"><i class="bi bi-cash-coin"></i></h1>
+            <p>SALDO PREVISTO</p>
+            <h1 class="valor">R$: 0,00</h1>
+
+        </div>
+       
+
+    </div>
+    
+    
+</body>
+</html>
