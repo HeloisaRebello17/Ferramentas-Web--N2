@@ -232,7 +232,7 @@ body{
     opacity: 0px;
     float: right;
     margin-right: 40px;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .child p{
@@ -257,4 +257,14 @@ body{
     float: right;
     margin-top: 35px;
     margin-right: 55px;
+}
+
+.Fulano{
+    margin-top: 10px;
+  margin-left: 1200px;
+}
+.icon4{
+    float: left;
+margin-left: 1155px;
+
 }
