@@ -1,35 +1,56 @@
-const menuItem = document.querySelectorAll('.item-menu');
-const btnExp = document.querySelector('#btn-exp');
-const menuSide = document.querySelector('.menu-lateral');
-const btnContainer = document.querySelector('.btn-container');
-const textoBotao = document.querySelector('.texto-botao');
-const iconBtn = document.querySelector('.icon-btn');
+document.addEventListener("DOMContentLoaded", function(event) {
+  const showNavbar = (toggleId, navId, bodyId, headerId) =>{
+      const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId),
+            bodypd = document.getElementById(bodyId),
+            headerpd = document.getElementById(headerId),
+            botao = document.getElementById('botao');
 
-function selectLink() {
-  menuItem.forEach((item) => item.classList.remove('ativo'));
-  this.classList.add('ativo');
-  if (menuSide.classList.contains('expandir')) {
-    btnContainer.classList.remove('menu-expandido');
-  } else {
-    btnContainer.classList.add('menu-expandido');
+      // Validate that all variables exist
+      if(toggle && nav && bodypd && headerpd){
+          toggle.addEventListener('click', ()=>{
+              // show navbar
+              nav.classList.toggle('show');
+              // change icon
+              toggle.classList.toggle('bx-x');
+              // add padding to body
+              bodypd.classList.toggle('body-pd');
+              // add padding to header
+              headerpd.classList.toggle('body-pd');
+              // Adicionar ou remover a classe de botao expandido
+              botao.classList.toggle('botao-expandido');
+              toggle.classList.toggle('bi-chevron-right');
+              toggle.classList.toggle('bi-chevron-left');
+
+              if (nav.classList.contains('show')) {
+                  // Se o menu for expandido, adicione o texto
+                  if (!botao.querySelector('span')) {
+                      const btnText = document.createElement('span');
+                      btnText.textContent = 'Novo';
+                      botao.appendChild(btnText);
+                  }
+              } else {
+                  // Se o menu for recolhido, remova o texto, se existir
+                  const btnText = botao.querySelector('span');
+                  if (btnText) {
+                      btnText.remove();
+                  }
+              }
+          });
+          
+      }
   }
-}
 
-menuItem.forEach((item) => item.addEventListener('click', selectLink));
+  showNavbar('header-toggle','nav-bar','body-pd','header');
 
-btnExp.addEventListener('click', function() {
-  menuSide.classList.toggle('expandir');
-  if (menuSide.classList.contains('expandir')) {
-    btnExp.classList.remove('nao-expandir');
-    btnExp.classList.add('expandir');
-  } else {
-    btnExp.classList.remove('expandir');
-    btnExp.classList.add('nao-expandir');
+  /*===== LINK ACTIVE =====*/
+  const linkColor = document.querySelectorAll('.nav_link');
+
+  function colorLink(){
+      if(linkColor){
+          linkColor.forEach(l=> l.classList.remove('active'));
+          this.classList.add('active');
+      }
   }
-});
-
-menuSide.addEventListener('click', function() {
-  btnContainer.classList.toggle('menu-expandido');
-  textoBotao.classList.toggle('visivel');
-  iconBtn.classList.toggle('icone-expandido');
+  linkColor.forEach(l=> l.addEventListener('click', colorLink));
 });
