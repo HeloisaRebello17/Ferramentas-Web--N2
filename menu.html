@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="menu-lateral.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body id="body-pd">
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <div>
+                <img class="header_img" src="imagem/logo.png" alt="">
+            </div>
+           <div class="botao-icon">
+                <button class="botao" id="botao">
+                  <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
+                 
+                </button>
+            </div>
+            <div class="header_toggle">    
+                    <i class='bi bi-chevron-right' id="header-toggle"></i>
+            </div>
+                <div class="nav_list">
+                    <a href="#" class="nav_link active">
+                        <i class="bi bi-house-door"></i>
+                        <span class="nav_name">Página Inicial</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class="bi bi-bank"></i>
+                        <span class="nav_name">Contas</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class="bi bi-list-ul"></i>
+                        <span class="nav_name">Transações</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class="bi bi-credit-card"></i>
+                        <span class="nav_name">Cartões de Crédito</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class="bi bi-gear"></i>
+                        <span class="nav_name">Configurações</span>
+                    </a>
+        </nav>
+    </div>
+    <!--Container Main start-->
+    <div class="header">
+        <h1>ABRIL</h1>
+        <div class="user-info">
+            <div class="icon" style="background-color: gray;">👤</div>
+            <span>Fulano</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h3>Saldo Atual</h3>
+            <div class="value">
+                R$ 1000,00
+                <div class="icon icon-bank">🏦</div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Despesas</h3>
+            <div class="value">
+                R$ 0,00
+                <div class="icon icon-expense">⬇️</div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Cartão de Crédito</h3>
+            <div class="value">
+                R$ 0,00
+                <div class="icon icon-credit">💳</div>
+            </div>
+        </div>
+        <div class="card">
+            <h3>Lucro</h3>
+            <div class="value">
+                R$ 0,00
+                <div class="icon icon-profit">⬆️</div>
+            </div>
+        </div>
+        <div class="card card-large">
+            <h3>Despesas</h3>
+            <p style="color: green;">Você ainda não possui despesas</p>
+        </div>
+        <div class="card card-large">
+            <h3>Restante mensal</h3>
+            <p>Lucro<br>Despesas<br>__________<br>Restante</p>
+        </div>
+        <div class="card card-large">
+            <h3>Cartão de Crédito</h3>
+            <div style="display: flex; gap: 10px;">
+                <button style="background-color: green; color: white; padding: 5px 10px; border: none; border-radius: 5px;">Faturas abertas</button>
+                <button style="background-color: #ddd; padding: 5px 10px; border: none; border-radius: 5px;">Faturas fechadas</button>
+            </div>
+            <p style="color: green;">Você ainda não cadastrou o cartão de crédito</p>
+        </div>
+        <div class="card card-large">
+            <h3>Lucro</h3>
+            <div class="balance">
+                <div class="icon icon-profit">⬆️</div>
+                <p>R$0,00<br>Total</p>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    <!--Container Main end-->
+    <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>
