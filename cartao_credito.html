@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/despesa.css">
+  <link rel="stylesheet" href="css/cartao_credito.css">
   <link rel="stylesheet" href="css/menu-lateral.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -67,7 +67,7 @@
       <div class="modal-dialog"> <!-- Adicione a classe modal-lg para aumentar o tamanho do modal -->
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Nova Despesa</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Ganho</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -106,7 +106,7 @@
               <div class="form_local">
                 <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
                   <option selected>Local</option>
-                  <option value="1">Lazer</option>
+                  <option value="1">Casa</option>
                   <option value="2">Educação</option>
                   <option value="3">Restaurante</option>
                 </select>
@@ -116,7 +116,10 @@
                 <p class="cartao">Cartão</p>
                 <hr>
               </div>
-            </div>
+              <div class="data_venc">
+                <input class="form_descricao" name="data_venc" type="text" placeholder="Data de Vencimento" />
+                <hr class="linha_data_venc">
+              </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary">Save changes</button>

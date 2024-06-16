@@ -1,6 +1,6 @@
 input.form-control{
     border: none;
-    color: red;
+    color: #008000;
     font-size:27px;
 }
 input.form-control:focus{
@@ -131,6 +131,7 @@ button.btn-secondary1{
   background-color: #d2d2d2;
   color: white;
 }
+
 .icon-left{
     margin-left:-160px
 }
@@ -167,7 +168,7 @@ button.btn-secondary1{
     color: grey;
 }
 div.container input.btn-check:checked + label.btn-secondary-custom {
-    background-color: #8E0000;
+    background-color: #008000;
     color: #fff;
     border: none;
     border-radius: 17px;
@@ -189,16 +190,16 @@ div.container input.btn-check:focus + label.btn-secondary-custom {
     border-radius: 17px ;
 }
 .modal-header1{
-    background-color: #8E0000;
+    background-color: #008000;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     height:100px;
 }
 
 .btn-check:checked + .btn-secondary-custom {
-    background-color: #8E0000 !important;
+    background-color: #008000 !important;
     color: #fff !important;
-    border-color: hsl(0, 100%, 28%) !important;
+    border-color: #008000!important;
     border-radius: 17px;
 }
 
