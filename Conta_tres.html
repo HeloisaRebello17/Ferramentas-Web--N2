@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta 3</title>
+    <!-- Link para o arquivo CSS -->
+    
+</head>
+<body>
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <!-- Ícones da barra lateral -->
+            <div class="sidebar-icon home-icon"></div>
+            <div class="sidebar-icon bank-icon"></div>
+            <div class="sidebar-icon list-icon"></div>
+            <div class="sidebar-icon card-icon"></div>
+            <div class="sidebar-icon settings-icon"></div>
+        </aside>
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <!-- Cabeçalho -->
+            <header class="header">
+                <!-- Perfil do usuário -->
+                <div class="profile">
+                    <span>Fulano</span>
+                </div>
+            </header>
+            <!-- Seção de contas -->
+            <section class="accounts-section">
+                <!-- Cartão de nova conta -->
+                <div class="account-card">
+                    <div class="account-icon"></div>
+                    <span>Nova conta</span>
+                </div>
+                <!-- Detalhes da conta -->
+                <div class="account-details">
+                    <form>
+                        <h2>Nova conta</h2>
+                        <!-- Grupo de formulário para saldo -->
+                        <div class="form-group">
+                            <label for="balance">R$</label>
+                            <input type="text" id="balance" value="0,00">
+                            <span>BRL</span>
+                        </div>
+                        <!-- Grupo de formulário para instituição financeira -->
+                        <div class="form-group">
+                            <label for="financial-institution">Instituição financeira</label>
+                            <input type="text" id="financial-institution" value="Nubank" readonly>
+                        </div>
+                        <!-- Grupo de formulário para descrição -->
+                        <div class="form-group">
+                            <label for="description">Descrição</label>
+                            <input type="text" id="description">
+                        </div>
+                        <!-- Grupo de formulário para número da conta -->
+                        <div class="form-group">
+                            <label for="account-number">Conta</label>
+                            <input type="text" id="account-number">
+                        </div>
+                        <!-- Botão de salvar -->
+                        <button type="submit">Salvar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <style>
+        /* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: #f0f0f0;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Ícones da barra lateral */
+.sidebar-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Ícones específicos */
+.home-icon {
+    background-image: url('home-icon.png'); /* Icone de teste */
+    background-size: cover;
+}
+
+.bank-icon {
+    background-image: url('bank-icon.png'); /* Icone de teste */
+    background-size: cover;
+}
+
+.list-icon {
+    background-image: url('list-icon.png'); /* Icone de teste */
+    background-size: cover;
+}
+
+.card-icon {
+    background-image: url('card-icon.png'); /* Icone de teste */
+    background-size: cover;
+}
+
+.settings-icon {
+    background-image: url('settings-icon.png'); /* Icone de teste */
+    background-size: cover;
+}
+
+/* Conteúdo principal */
+.main-content {
+    flex: 1;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Perfil do usuário no cabeçalho */
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+/* Nome do usuário */
+.profile span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Seção de contas */
+.accounts-section {
+    padding: 20px;
+    display: flex;
+}
+
+/* Cartão de nova conta */
+.account-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    width: 200px;
+    justify-content: center;
+}
+
+/* Ícone da nova conta */
+.account-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Detalhes da conta */
+.account-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título do formulário */
+h2 {
+    margin-top: 0;
+}
+
+/* Grupo de formulário */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Rótulos dos campos de formulário */
+.form-group label {
+    margin-right: 10px;
+    flex: 0 0 50px;
+}
+
+/* Campos de entrada */
+.form-group input {
+    flex: 1;
+    padding: 5px;
+}
+
+/* Unidade monetária */
+.form-group span {
+    margin-left: 10px;
+}
+
+/* Botão de salvar */
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</body>
+</html>
