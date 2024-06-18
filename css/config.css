@@ -1,0 +1,153 @@
+:root {
+    --background-color-light: #ffffff;
+    --text-color-light: #000000;
+    --background-color-dark: #363537;
+    --text-color-dark: #FAFAFA;
+}
+
+body[data-theme="light"] {
+    background-color: var(--background-color-light);
+    
+}
+
+body[data-theme="dark"] {
+    background-color: var(--background-color-dark);
+  
+}
+    html, body {
+        height: 100%;
+        margin: 0; /* Remove a margem padrão */
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .container {
+       
+        padding: 12px 18px;
+        display: flex;
+        flex-direction: column;
+        width: 90px;
+        height: 100%;
+      
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        height: 100%;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+    .setinha{
+
+        img{
+            width: 30px;
+            height: 30px;
+            margin-left: 80px;
+        }
+    }
+    .container-right{
+        padding-left: 90px;
+        padding-top: 15px;
+        padding-right: 30px;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-color: #EAEAEA;
+        flex-direction: column;
+    }
+
+    .perfil{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 10px;
+       
+    }
+    .name{
+        margin-right: 0px;
+        
+    }
+   .card{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+   }
+.idioma-moeda{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.cards-combobox{
+    padding: 30px 39px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px
+    ;
+}
+.aparencia-alteracoes{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.combobox {
+    width: 200px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.selected-item, .dropdown-item {
+    padding: 10px;
+    background-color: #fff;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+   
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50; /* Verde */
+    color: black; /* Texto Preto */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 70px;
+}
+
+.button:hover {
+    background-color: #45a049; /* Um verde um pouco mais escuro */
+}
+.container-button{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
