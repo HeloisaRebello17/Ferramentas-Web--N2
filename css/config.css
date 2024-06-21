@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    height: 100vh;
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 148px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link img {
+    width: 30px;
+    height: 30px;
+}
+
+.sidebar .nav-link.active img {
+    background-color: #c0e0c0;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.btn-toolbar .btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.container-config{
+    border-radius: 20px;
+    height:260px;
+    width: 1050px;
+    background-color: white;
+    margin-left:100px
+    
+}
+.principal-config{
+    background-color: #EAEAEA;
+    
+}
+
+.main {
+    padding: 20px;
+}
