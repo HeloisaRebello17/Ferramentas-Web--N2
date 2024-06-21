@@ -27,7 +27,7 @@ body .body-pd {
     font-family: var(--body-font);
     font-size: 18px;
     transition: .5s;
-    background-color: #EAEAEA;
+    background-color: #EAEAEA !important;
 }
 
 
@@ -226,7 +226,7 @@ i {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
         padding-left: calc(var(--nav-width) + 0rem);
-        background-color: #EAEAEA;
+        background-color: #EAEAEA !important;
       
 
     }
