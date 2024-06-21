@@ -1,0 +1,152 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Media Queries para Responsividade */
+@media (min-width: 600px) {
+    nav ul {
+        flex-wrap: nowrap;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.elemento, .child, .child1 {
+    width: 90%;
+    max-width: 300px;
+    height: 200px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.elemento p, .child p, .child1 p {
+    margin-top: 20px;
+}
+
+.icon2, .icon3 {
+    font-size: 40px;
+}
+
+.icone {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.valor {
+    margin-top: 15px;
+}
+
+.containerPerfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    padding: 20px;
+}
+
+.criar_conta {
+    background-color: white;
+    border: none;
+    padding: 0%;
+    outline: none;
+}
+
+.criar_conta:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Media Queries para Melhorar a Responsividade */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .elemento, .child, .child1 {
+        width: 45%;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .elemento, .child, .child1 {
+        width: 30%;
+        max-width: 300px;
+    }
+}
