@@ -48,14 +48,12 @@ body[data-theme="dark"] {
         width: 50px;
         height: 50px;
     }
-    .setinha{
 
-        img{
+.img-setinha{
             width: 30px;
             height: 30px;
             margin-left: 80px;
         }
-    }
     .container-right{
         padding-left: 90px;
         padding-top: 15px;
