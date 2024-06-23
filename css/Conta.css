@@ -20,31 +20,45 @@
 .elemento_dois {
     width: 400px; /* Define a largura do elemento */
     height: 150px; /* Define a altura do elemento */
-    background-color: #FFFFFF; /* Define a cor de fundo do elemento */
-    border-radius: 25px; /* Define bordas arredondadas com raio de 25px */
+    position: relative;
+    top: 60px;
+    background-color: #FFFFFF; 
+    border-radius: 25px; /* Define bordas arredondadas*/
     text-align: center; /* Centraliza o texto dentro do elemento */
     float: left; /* Faz o elemento flutuar à esquerda */
 }
 
 /* id's dos elementos do child */
 #cartao{
-   margin-right: 190px;
+   right: 110px;
+   position: relative;
+   bottom: 23px;
+   font-weight: bold;
 }
 
 #atual{
     margin-right: 280px;
+    position: relative;
+    bottom: 25px;
 }
 #Previsto{
     margin-right: 264px;
+    position: relative;
+    bottom: 25px;
 }
 
 #valorAtual{
     margin-left: 197px;
-    margin-top: -77px;
+    position: relative;
+    bottom: 105px;
+    color: green;
 }
 
 #valorPrevisto{
     margin-left: 197px;
+    position: relative;
+    bottom: 105px;
+    color: green;
 }
 
 
@@ -135,7 +149,9 @@
     align-items: baseline; /* Alinha os itens ao longo da linha base */
     justify-content: center; /* Centraliza os itens no container */
     flex-direction: row; /* Define a direção dos itens em uma linha horizontal */
-    margin-left: 900px; /* Adiciona uma margem à esquerda de 900px */
+    position: relative;
+    left: 900px;
+    gap: 10px;
 }
 
 
@@ -149,4 +165,21 @@
 .criar_conta:focus {
     outline: none; /* Remove o contorno ao focar */
     box-shadow: none; /* Remove a sombra da caixa ao focar */
+}
+
+/* ajustando tamanho do logo nubank*/
+#nubank{
+    width: 32px;
+    position: relative;
+    right: 155px;
+    top: 5px;
+    
+}
+/*ajustando tamanho e posição do icon da lixeira*/
+#LogoLixo{
+    position: relative;
+    left: 150px;
+    top: 3px;
+    width: 18px;
+
 }

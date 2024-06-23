@@ -82,7 +82,7 @@ h2 {
 /* Rótulos dos campos de formulário */
 .form-group label {
     margin-right: 10px;
-    flex: 0 0 50px; /* Define as propriedades flexíveis do rótulo (será alterada quando transforma em responsivo) */
+    flex: 0 0 50px; /* Define as propriedades flexíveis do rótulo (será alterada quando transformar em responsivo) */
 }
 
 /* Campos de entrada */

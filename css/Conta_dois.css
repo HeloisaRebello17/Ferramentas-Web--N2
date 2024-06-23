@@ -1,152 +1,117 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.containerPerfil {
+    display: flex; /* Define um container flexível */
+    align-items: baseline; /* Alinha os itens ao longo da linha base */
+    justify-content: center; /* Centraliza os itens no container */
+    flex-direction: row; /* Define a direção dos itens em uma linha horizontal */
+    position: relative;
+    left: 900px;
+    gap: 10px;
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
+/* css referente à página de transações */
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-header img {
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+.container{
+    display: flex; /* Adiciona uma propriedade flexível */
+    gap: 100px;
     justify-content: center;
-}
-
-nav ul li {
-    margin: 5px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 10px;
-    transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-/* Media Queries para Responsividade */
-@media (min-width: 600px) {
-    nav ul {
-        flex-wrap: nowrap;
-    }
-
-    nav ul li {
-        margin: 0 10px;
-    }
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-.main {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.elemento, .child, .child1 {
-    width: 90%;
-    max-width: 300px;
-    height: 200px;
-    background-color: #FFFFFF;
-    border-radius: 25px;
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.elemento p, .child p, .child1 p {
-    margin-top: 20px;
-}
-
-.icon2, .icon3 {
-    font-size: 40px;
-}
-
-.icone {
-    font-size: 40px;
-    margin-top: 20px;
-}
-
-.valor {
+    align-items: start; /* Propriedade que que faz com que as div's fiquem no início da página */
+    flex-flow: row nowrap; /* Faz com que o tamanho dos elementos child não se adequem ao tamanho da tela */
     margin-top: 15px;
 }
 
-.containerPerfil {
+/* Estilização dos elementos child */
+
+#child_saldo{
+    width: 263px;
+    height: 111px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+}
+
+#saldo_atual{
+    position: relative;
+    left: 17px;
+    top: 20px;
+}
+
+#valor_saldo{
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+
+
+#child_despesas{
+    width: 263px;
+    height: 111px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+
+#despesas{
+    position: relative;
+    left: 15px;
+    top: 17px;
+}
+
+#valor_despesas{
+    position: relative;
+    left: 15px;
+    top: 17px;
+}
+
+#cartao_de_credito{
+    width: 263px;
+    height: 111px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+
+#cartao{
+    position: relative;
+    top: 18px;
+    left: 16px;
+}
+
+#valor_cartao{
+    position: relative;
+    top: 17px;
+    left: 15px;
+}
+
+#ganhos{
+    width: 263px;
+    height: 111px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+
+#Ganhos{
+    position: relative;
+    top: 17px;
+    left: 16px;
+}
+
+#valor_ganhos{
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+/* css da tabela */
+
+.container_dois{
     display: flex;
-    align-items: center;
+    width: 100%;
+    height: 400px;
     justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    padding: 20px;
+    align-items: flex-start;
+    margin-top: 50px;
 }
 
-.criar_conta {
-    background-color: white;
-    border: none;
-    padding: 0%;
-    outline: none;
-}
-
-.criar_conta:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-/* Media Queries para Melhorar a Responsividade */
-@media (min-width: 768px) {
-    .container {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .elemento, .child, .child1 {
-        width: 45%;
-        max-width: 400px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .container {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .elemento, .child, .child1 {
-        width: 30%;
-        max-width: 300px;
-    }
+#tabela{
+    width: 600px;
+    height: 250px;
+    background-color: purple;
 }
