@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
 :root {
     --background-color-light: #ffffff;
     --text-color-light: #000000;
@@ -14,35 +16,17 @@ body[data-theme="dark"] {
     background-color: var(--background-color-dark);
   
 }
-    html, body {
+     body {
         height: 100%;
         margin: 0; /* Remove a margem padrão */
         overflow: hidden;
         display: flex;
         width: 100%;
-        font-family: "Roboto", sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-weight: 500;
         font-style: normal;
     }
 
-    .container {
-       
-        padding: 12px 18px;
-        display: flex;
-        flex-direction: column;
-        width: 90px;
-        height: 100%;
-      
-    }
-
-    .icons {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column;
-        gap: 15px;
-        height: 100%;
-    }
 
     img {
         width: 50px;

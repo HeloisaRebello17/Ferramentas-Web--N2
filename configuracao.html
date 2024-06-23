@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,88 +5,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/cartao_credito.css">
+    <link rel="stylesheet" href="css/menu-lateral.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body>
-    <div class="container">
-        <div class="icons">
-            <img src="./imagem/Design sem nome (1) 2verde (1) 1icon verde.png" alt="">
-            <img src="./imagem/mais.png" alt="">
-            <div class="setinha">
-                <img class="img-setinha" src="./imagem/setinhadireita.png" alt="">
+<body id="body-pd">
+    <header class="header" id="header">
+       
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <div>
+                <img class="header_img" src="imagem/logo.png" alt="">
             </div>
-            <img src="./imagem/Home.png" alt="">
-            <img src="./imagem/banco.png" alt="">
-            <img src="./imagem/iconside.png" alt="">
-            <img src="./imagem/cartao.png" alt="">
-            <img src="./imagem/engrenagem.png" alt="">
-        </div>
+           <div class="botao-icon">
+                <button class="botao" id="botao">
+                  <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
+                 
+                </button>
+            </div>
+            <div class="header_toggle">    
+                    <i class='bi bi-chevron-right' id="header-toggle"></i>
+            </div>
+                <div class="nav_list">
+                    <a href="#" class="nav_link active">
+                        <i class="bi bi-house-door"></i>
+                        <span class="nav_name">Página Inicial</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class="bi bi-bank"></i>
+                        <span class="nav_name">Contas</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class="bi bi-list-ul"></i>
+                        <span class="nav_name">Transações</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class="bi bi-credit-card"></i>
+                        <span class="nav_name">Cartões de Crédito</span>
+                    </a>
+                    <a href="#" class="nav_link">
+                        <i class="bi bi-gear"></i>
+                        <span class="nav_name">Configurações</span>
+                    </a>
+        </nav>
     </div>
-
-    <div class="container-right">
-        <div class="perfil ">
-            <img src="./imagem/perfil.png" alt="">
-            <h5 class="name">Fulano</h5>
-        </div>
-        <div class="title">
-            <h1>CONFIGURAÇÕES</h1>
-        </div>
-
-        <div class="container-card">
-            <div class="card">
-                <div class="cards-combobox">
-
-                    <div class="idioma-moeda">
-
-                        <div>
-                            <h1>Idioma</h1>
-                            <div class="combobox" onclick="toggleDropdown('dropdown')">
-                                <div class="selected-item" id="selectedItem">Selecione um idioma</div>
-                                <div class="dropdown" id="dropdown">
-                                    <div class="dropdown-item" onclick="selectItem('selectedItem', 'dropdown', 'Português')">Português</div>
-                                    <div class="dropdown-item" onclick="selectItem('selectedItem', 'dropdown', 'Inglês')">Inglês</div>
-                                    <div class="dropdown-item" onclick="selectItem('selectedItem', 'dropdown', 'Espanhol')">Espanhol</div>
+    <!--Container Main start-->
+    <div class="main">
+        <div class="container-right">
+            <div class="perfil ">
+                <img src="./imagem/perfil.png" alt="">
+                <h5 class="name">Fulano</h5>
+            </div>
+            <div class="title">
+                <h1>CONFIGURAÇÕES</h1>
+            </div>
+    
+            <div class="container-card">
+                <div class="card">
+                    <div class="cards-combobox">
+    
+                        <div class="idioma-moeda">
+    
+                            <div>
+                                <h1>Idioma</h1>
+                                <div class="combobox" onclick="toggleDropdown('dropdown')">
+                                    <div class="selected-item" id="selectedItem">Selecione um idioma</div>
+                                    <div class="dropdown" id="dropdown">
+                                        <div class="dropdown-item" onclick="selectItem('selectedItem', 'dropdown', 'Português')">Português</div>
+                                        <div class="dropdown-item" onclick="selectItem('selectedItem', 'dropdown', 'Inglês')">Inglês</div>
+                                        <div class="dropdown-item" onclick="selectItem('selectedItem', 'dropdown', 'Espanhol')">Espanhol</div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div>
-                            <h1>Moeda</h1>
-                            <div class="combobox" onclick="toggleDropdown('dropdownMoeda')">
-                                <div class="selected-item" id="selectedItemMoeda">Selecione uma moeda</div>
-                                <div class="dropdown" id="dropdownMoeda">
-                                    <div class="dropdown-item" onclick="selectItem('selectedItemMoeda', 'dropdownMoeda', 'Real Brasileiro')">Real Brasileiro</div>
-                                    <div class="dropdown-item" onclick="selectItem('selectedItemMoeda', 'dropdownMoeda', 'Dólar')">Dólar</div>
-                                    <div class="dropdown-item" onclick="selectItem('selectedItemMoeda', 'dropdownMoeda', 'Euro')">Euro</div>
+                            
+                            <div>
+                                <h1>Moeda</h1>
+                                <div class="combobox" onclick="toggleDropdown('dropdownMoeda')">
+                                    <div class="selected-item" id="selectedItemMoeda">Selecione uma moeda</div>
+                                    <div class="dropdown" id="dropdownMoeda">
+                                        <div class="dropdown-item" onclick="selectItem('selectedItemMoeda', 'dropdownMoeda', 'Real Brasileiro')">Real Brasileiro</div>
+                                        <div class="dropdown-item" onclick="selectItem('selectedItemMoeda', 'dropdownMoeda', 'Dólar')">Dólar</div>
+                                        <div class="dropdown-item" onclick="selectItem('selectedItemMoeda', 'dropdownMoeda', 'Euro')">Euro</div>
+                                    </div>
                                 </div>
                             </div>
+                           
                         </div>
-                       
-                    </div>
-                    <div class="aparencia-alteracoes">
-                        <div>
-                            <h1>Aparência</h1>
-                            <div class="combobox" onclick="toggleDropdown('dropdownAparencia')">
-                                <div class="selected-item" id="selectedItemAparencia">Selecione um tema</div>
-                                <div class="dropdown" id="dropdownAparencia">
-                                    <div class="dropdown-item" onclick="selectTheme('selectedItemAparencia', 'dropdownAparencia', 'Claro')">Modo Claro</div>
-                                    <div class="dropdown-item" onclick="selectTheme('selectedItemAparencia', 'dropdownAparencia', 'Escuro')">Modo Escuro</div>
+                        <div class="aparencia-alteracoes">
+                            <div>
+                                <h1>Aparência</h1>
+                                <div class="combobox" onclick="toggleDropdown('dropdownAparencia')">
+                                    <div class="selected-item" id="selectedItemAparencia">Selecione um tema</div>
+                                    <div class="dropdown" id="dropdownAparencia">
+                                        <div class="dropdown-item" onclick="selectTheme('selectedItemAparencia', 'dropdownAparencia', 'Claro')">Modo Claro</div>
+                                        <div class="dropdown-item" onclick="selectTheme('selectedItemAparencia', 'dropdownAparencia', 'Escuro')">Modo Escuro</div>
+                                    </div>
+                                 
                                 </div>
-                             
                             </div>
+                            <div class="container-button">
+                                <button class="button">Salvar Alterações</button>
+                            </div>
+                           
                         </div>
-                        <div class="container-button">
-                            <button class="button">Salvar Alterações</button>
-                        </div>
-                       
                     </div>
                 </div>
             </div>
+    
         </div>
-
     </div>
+       
+   
+    <!--Container Main end-->
     <script src="js/combo.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
 </body>
 
