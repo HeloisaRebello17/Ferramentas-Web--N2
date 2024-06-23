@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/config.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="icons">
+            <img src="./imagem/Design sem nome (1) 2verde (1) 1icon verde.png" alt="">
+            <img src="./imagem/mais.png" alt="">
+            <div class="setinha">
+                <img src="./imagem/setinhadireita.png" alt="">
+            </div>
+            <img src="./imagem/Home.png" alt="">
+            <img src="./imagem/banco.png" alt="">
+            <img src="./imagem/iconside.png" alt="">
+            <img src="./imagem/cartao.png" alt="">
+            <img src="./imagem/engrenagem.png" alt="">
+        </div>
+    </div>
+
+    <div class="container-right">
+        <div class="perfil ">
+            <img src="./imagem/perfil.png" alt="">
+            <h5 class="name">Fulano</h5>
+        </div>
+        <div class="title">
+            <h1>CONFIGURAÇÕES</h1>
+        </div>
+
+        <div class="container-card">
+            <div class="card">
+                <div class="cards-combobox">
+
+                    <div class="idioma-moeda">
+
+                        <div>
+                            <h1>Idioma</h1>
+                            <div class="combobox" onclick="toggleDropdown('dropdown')">
+                                <div class="selected-item" id="selectedItem">Selecione um idioma</div>
+                                <div class="dropdown" id="dropdown">
+                                    <div class="dropdown-item" onclick="selectItem('selectedItem', 'dropdown', 'Português')">Português</div>
+                                    <div class="dropdown-item" onclick="selectItem('selectedItem', 'dropdown', 'Inglês')">Inglês</div>
+                                    <div class="dropdown-item" onclick="selectItem('selectedItem', 'dropdown', 'Espanhol')">Espanhol</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h1>Moeda</h1>
+                            <div class="combobox" onclick="toggleDropdown('dropdownMoeda')">
+                                <div class="selected-item" id="selectedItemMoeda">Selecione uma moeda</div>
+                                <div class="dropdown" id="dropdownMoeda">
+                                    <div class="dropdown-item" onclick="selectItem('selectedItemMoeda', 'dropdownMoeda', 'Real Brasileiro')">Real Brasileiro</div>
+                                    <div class="dropdown-item" onclick="selectItem('selectedItemMoeda', 'dropdownMoeda', 'Dólar')">Dólar</div>
+                                    <div class="dropdown-item" onclick="selectItem('selectedItemMoeda', 'dropdownMoeda', 'Euro')">Euro</div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                    <div class="aparencia-alteracoes">
+                        <div>
+                            <h1>Aparência</h1>
+                            <div class="combobox" onclick="toggleDropdown('dropdownAparencia')">
+                                <div class="selected-item" id="selectedItemAparencia">Selecione um tema</div>
+                                <div class="dropdown" id="dropdownAparencia">
+                                    <div class="dropdown-item" onclick="selectTheme('selectedItemAparencia', 'dropdownAparencia', 'Claro')">Modo Claro</div>
+                                    <div class="dropdown-item" onclick="selectTheme('selectedItemAparencia', 'dropdownAparencia', 'Escuro')">Modo Escuro</div>
+                                </div>
+                             
+                            </div>
+                        </div>
+                        <div class="container-button">
+                            <button class="button">Salvar Alterações</button>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/combo.js"></script>
+
+</body>
+
+</html>

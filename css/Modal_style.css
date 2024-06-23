@@ -1,0 +1,111 @@
+/* Conteúdo principal */
+.main-content {
+    flex: 1;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Nome do usuário */
+.profile span {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Seção de contas */
+.accounts-section {
+    padding: 20px;
+    
+}
+
+/* Cartão de nova conta */
+.account-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    width: 200px;
+    justify-content: center;
+}
+
+/* Ícone da nova conta */
+.account-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Detalhes da conta */
+.account-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título do formulário */
+h2 {
+    margin-top: 0;
+}
+
+/* Grupo de formulário */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Rótulos dos campos de formulário */
+.form-group label {
+    margin-right: 10px;
+    flex: 0 0 50px;
+}
+
+/* Campos de entrada */
+.form-group input {
+    flex: 1;
+    padding: 5px;
+}
+
+/* Unidade monetária */
+.form-group span {
+    margin-left: 10px;
+}
+
+/* Botão de salvar */
+.btn-save {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #45a049;
+}
