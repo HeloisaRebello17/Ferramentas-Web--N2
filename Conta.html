@@ -22,11 +22,12 @@
             </div>
         </div>
     </header>
+    <!--Menu lateral-->
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
                 <div>
-                    <img class="header_img" src="imagem/logo.png" alt="">
+                    <img class="header_img" src="imagem/logo.png" alt="Logo">
                 </div>
                 <div class="botao-icon">
                     <button class="botao" id="botao">
@@ -60,16 +61,48 @@
                     </a>
         </nav>
     </div>
+    <!--Fim do menu lateral-->
+
     <!--Container Main start-->
     <div class="main">
-        <div class="container">
-            <div class="elemento">
+        <div class="container" style="display:flex;">
+            <div>
+            <div class="elemento" style="margin-bottom:10px">
                 <button type="button" class="criar_conta" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <h1 class="icone"><i class="bi bi-plus-circle"></i></h1>
                 </button>
-                <p>NOVA CONTA</p>
+                <h5>Nova Conta</h5>
 
             </div>
+            <!--Box para cartão-->
+            <div class="elemento_dois">
+                <img id="nubank"   src="imagem/Nubank.png" alt="logo Nubank">
+                <img  id="LogoLixo"  src="imagem/trash3.svg" alt="logoLixo">
+                <p id="cartao">CARTÃO</p>
+                <p id="atual">Saldo Atual</p>
+                <p id="Previsto">Saldo Previsto</p>
+                <p id="valorAtual">R$ 1000,00</p>
+                <p id="valorPrevisto">R$ 1000,00</p>
+
+            </div>
+        </div>
+            <div>
+                <!--Box para saldo-->
+                <div class="child">
+                    <h1 class="icon2"><i class="bi bi-coin"></i></h1>
+                    <p>SALDO ATUAL</p>
+                    <h1 class="valor">R$: 0,00</h1>
+
+                </div>
+
+                <div class="child1" >
+                    <h1 class="icon3"><i class="bi bi-cash-coin"></i></h1>
+                    <p>SALDO PREVISTO</p>
+                    <h1 class="valor">R$: 0,00</h1>
+                </div>
+            </div>
+             
+
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
@@ -89,7 +122,7 @@
                                     <label for="instituicao">Instituição financeira</label>
                                     <div>
                                         <img src="nubank-logo.png" alt="Nubank" >
-                                        <input type="text" id="instituicao" name="instituicao" value="Nubank">
+                                        <input type="text" id="instituicao" name="instituicao" placeholder="Ex: nubank">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -110,29 +143,19 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="child">
-                    <h1 class="icon2"><i class="bi bi-coin"></i></h1>
-                    <p>SALDO ATUAL</p>
-                    <h1 class="valor">R$: 0,00</h1>
-
-                </div>
-
-                <div class="child1">
-                    <h1 class="icon3"><i class="bi bi-cash-coin"></i></h1>
-                    <p>SALDO PREVISTO</p>
-                    <h1 class="valor">R$: 0,00</h1>
-
-                </div>
-            </div>
+          
+        
 
 
         </div>
+        
 
     </div>
-
+   
 
     <!--Container Main end-->
+
+    <!--Js referente ao menu-->
     <script src="js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

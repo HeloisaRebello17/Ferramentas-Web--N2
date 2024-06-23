@@ -1,21 +1,66 @@
 /* css da pagina daqui para baixo*/
 
 
-.main{
-    margin-top: 40px;
+.main {
+    margin-top: 40px; /* Adiciona uma margem superior de 40px */
 }
+
 
 
 .elemento {
-    width: 300px;
-    height: 200px;
-    background-color: #FFFFFF;
-    border-radius: 25px;
-    text-align: center;
-    float: left;
-    margin: auto;
-    
+    width: 300px; 
+    height: 200px; 
+    background-color: #FFFFFF; 
+    border-radius: 25px; /* Define bordas arredondadas com raio de 25px */
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
 }
+
+/* Child para saldo e cartão */
+.elemento_dois {
+    width: 400px; /* Define a largura do elemento */
+    height: 150px; /* Define a altura do elemento */
+    position: relative;
+    top: 60px;
+    background-color: #FFFFFF; 
+    border-radius: 25px; /* Define bordas arredondadas*/
+    text-align: center; /* Centraliza o texto dentro do elemento */
+    float: left; /* Faz o elemento flutuar à esquerda */
+}
+
+/* id's dos elementos do child */
+#cartao{
+   right: 110px;
+   position: relative;
+   bottom: 23px;
+   font-weight: bold;
+}
+
+#atual{
+    margin-right: 280px;
+    position: relative;
+    bottom: 25px;
+}
+#Previsto{
+    margin-right: 264px;
+    position: relative;
+    bottom: 25px;
+}
+
+#valorAtual{
+    margin-left: 197px;
+    position: relative;
+    bottom: 105px;
+    color: green;
+}
+
+#valorPrevisto{
+    margin-left: 197px;
+    position: relative;
+    bottom: 105px;
+    color: green;
+}
+
 
 .elemento p {
     margin-top: 40px;
@@ -34,14 +79,14 @@
 }
 
 .title {
-    font-size: 30px;
-    width: 146px;
+    font-size: 30px; /* Define o tamanho da fonte para 30px */
+    width: 146px; 
     height: 42px;
-    top: 151px;
-    left: 308px;
-    padding-left: 250px;
-    padding-top: 40px;
-
+    position: relative; /* Adiciona posicionamento relativo */
+    top: 151px; /* Define a posição superior do elemento */
+    left: 308px; /* Define a posição à esquerda do elemento */
+    padding-left: 250px; /* Adiciona um preenchimento à esquerda de 250px */
+    padding-top: 40px; /* Adiciona um preenchimento superior de 40px */
 }
 
 .child {
@@ -49,36 +94,31 @@
     height: 110px;
     background-color: #FFFFFF;
     border-radius: 25px;
-    top: 245px;
-    left: 937px;
-    gap: 0px;
-    opacity: 0px;
+    position: relative;/* Adiciona posicionamento relativo para poder utilizar top */
+    top: 20px; /* Define a posição superior do elemento */
+    opacity: 0px; /* Define a opacidade do elemento para 0 no caso transparente */
     float: right;
-    margin-right: 40px;
-    margin-top: 100px;
+  
 }
 
 
 
 .child p {
-    margin-left: 50px;
-    margin-top: 15px;
-    color: gray;
+    margin-left: 50px; /* Adiciona uma margem a esquerda dentro do elemento child */
+    margin-top: 15px; /* Adiciona uma margem superior dentro do elemento child */
+    color: gray; 
 }
 
 .child1 {
-    width: 408px;
+    width: 408px; 
     height: 110px;
-    background-color: #FFFFFF;
-    border-radius: 25px;
-    top: 245px;
-    gap: 0px;
-    opacity: 0px;
-    float: right;
-    margin-right: 40px;
-    margin-top: 100px;
-    margin-left: 937px;
+    background-color: #FFFFFF; 
+    border-radius: 25px; 
+    position: relative; /* Define a posição como relativa */
+    top: 90px; /* Define a posição superior do elemento*/
+    float: right; /* Faz o elemento flutuar à direita */
 }
+
 
 .child1 p {
     margin-left: 50px;
@@ -90,7 +130,7 @@
     margin-left: 47px;
     margin-top: 15px;
 }
-
+/* Estilização dos ícones */
 .icon2 {
     float: right;
     margin: 35px;
@@ -105,22 +145,41 @@
 }
 
 .containerPerfil {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    flex-direction: row;
-    margin-left: 900px;
-    position: static;
+    display: flex; /* Define um container flexível */
+    align-items: baseline; /* Alinha os itens ao longo da linha base */
+    justify-content: center; /* Centraliza os itens no container */
+    flex-direction: row; /* Define a direção dos itens em uma linha horizontal */
+    position: relative;
+    left: 900px;
+    gap: 10px;
 }
 
+
 .criar_conta {
-    background-color: white;
-    border: none;
-    padding: 0%;
-    outline: none;
+    background-color: white; 
+    border: none; /* Remove a borda */
+    padding: 0%; /* Remove o preenchimento interno */
+    outline: none; /* Remove o contorno ao focar */
 }
 
 .criar_conta:focus {
-    outline: none;
-    box-shadow: none;
+    outline: none; /* Remove o contorno ao focar */
+    box-shadow: none; /* Remove a sombra da caixa ao focar */
+}
+
+/* ajustando tamanho do logo nubank*/
+#nubank{
+    width: 32px;
+    position: relative;
+    right: 155px;
+    top: 5px;
+    
+}
+/*ajustando tamanho e posição do icon da lixeira*/
+#LogoLixo{
+    position: relative;
+    left: 150px;
+    top: 3px;
+    width: 18px;
+
 }
