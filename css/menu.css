@@ -5,10 +5,6 @@ body {
     padding: 20px;
 }
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
     background-color: #EAEAEA;
 }
 .header h1 {
@@ -31,7 +27,8 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    width: 200px;
+    width: 240px;
+    margin-left: 30px;
     text-align: left;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -43,7 +40,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 .icon {

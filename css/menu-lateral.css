@@ -247,11 +247,11 @@ i {
     }
 
     .show {
-        width: calc(var(--nav-width) + 156px)
+        width: calc(var(--nav-width) + 164px)
     }
 
     .body-pd {
-        padding-left: calc(var(--nav-width) + 188px);
+        padding-left: calc(var(--nav-width) + 170px);
         top: 0%;
         background-color: #EAEAEA;
         

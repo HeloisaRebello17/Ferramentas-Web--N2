@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+.restante_mensal{
+    width:400px;
+    margin-left:200px;
+    margin-bottom: 50px;
+    margin-top:40px;
+}
+.titulo_restanteMensal{
+    margin-left: 40px;
+}
+.container_restanteMensal{
+    display: flex;
+    margin-left:40px;
+    margin-top:15px
+}
+.barra-bicolor-vertical {
+    width: 23px; 
+    height: 150px;
+    border-radius: 13px;
+    background: linear-gradient(to bottom, #99CB85 20%, #C20000 20%);
+}
+.container_mensal{
+    display: flex;
+    flex-direction: column; 
+    margin-left:20px;
+}
+.ganhos{
+    color:#99CB85;
+    font-size:20px
+}
+.ganhosTotal{
+    color:#99CB85;
+    font-size:20px;
+}
+.container_cartao{
+    width:400px;
+    margin-left: -5px
+}
+.titulo_cartao{
+    margin-left: 40px;
+}
+.p_cartao{
+    color: #99CB85;
+}
+.resultado_cartao{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.valor{
+    color:red
+}
+.container_resultadoCartao{
+    margin-top:15px
+}
+
+.bi-credit-card{
+    font-size: 25px;
+}
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 15px solid #C20000; 
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 80px ;
+}
+.total_despesa{
+    display: flex;
+    flex-direction:column;
+    margin-top:15px;
+ 
+}
+
+.total{
+    margin-bottom:0px;
+}
+
+.p_total{
+    font-size:17px;
+}
+
+.container_despesa{
+    width:400px;
+    margin-left: -5px;
+    margin-top:40px;
+}
+.despesas{
+    color:#C20000;
+    font-size:20px;
+}
+
+.titulo_despesa{
+    margin-left: 40px;
+}
+.circle-container-ganhos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 15px solid #99CB85; 
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 80px ;
+}
+.total_ganhos{
+    display: flex;
+    flex-direction:column;
+    margin-top:15px;
+ 
+}
+
+.dinheiro_ganhos{
+    margin-bottom:0px;
+}
+
+.p_total_ganhos{
+    font-size:17px;
+}
+
+.container_ganhos{
+    width:400px;
+    margin-left: 200px;
+}
+
+.titulo_ganhos{
+    margin-left: 40px;
+}
+
+/* header*/
+.icon-cartao{
+    width:40px;
+    height:40px; 
+    background-color: #00C2B7; 
+    border-radius: 100px; 
+    display: flex;     
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-despesa{
+    width:40px;
+    height:40px;  
+    background-color: #C20000; 
+    border-radius: 100px; 
+    display: flex;     
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-lucro{
+    width:40px;
+    height:40px;  
+    background-color: #99CB85; 
+    border-radius: 100px; 
+    display: flex;     
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-saldo{
+    width:40px;
+    height:40px;  
+    background-color: #CD85CA; 
+    border-radius: 100px; 
+    display: flex;     
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.saldo{
+    color: #737272;
+}
+.despesa{
+    color: #737272
+}
+.cartao{
+    color: #737272;
+}
+.lucro{
+    color: #737272;
+}
