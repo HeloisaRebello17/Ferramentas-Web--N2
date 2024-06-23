@@ -20,7 +20,7 @@
     width: 23px; 
     height: 150px;
     border-radius: 13px;
-    background: linear-gradient(to bottom, #C20000 0%, #C20000 100%);
+    background: linear-gradient(to bottom, #99CB85 20%, #C20000 20%);
 }
 .container_mensal{
     display: flex;
@@ -32,7 +32,7 @@
     font-size:20px
 }
 .ganhosTotal{
-    color:#C20000;
+    color:#99CB85;
     font-size:20px;
 }
 .container_cartao{
