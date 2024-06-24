@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conta</title>
     <link rel="stylesheet" href="css/Conta_dois.css">
+    <link rel="stylesheet" href="css/despesa1.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/Modal_style.css">
     <link rel="stylesheet" href="css/menu-lateral.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
@@ -64,24 +66,44 @@
     <!--Fim do menu lateral-->
 
     <!--container para box de valores-->
-          <div class="container">
-            <div id="child_saldo">
-                <p id="saldo_atual">Saldo atual</p>
-                <h3 id="valor_saldo">R$ 1200,00</h3>
+    <div class="card-resultado" style="display: flex;">
+        <div class="card">
+            <h3 class="saldo">Saldo Atual</h3>
+            <div class="value">
+                R$ 1000,00
+                <div class="icon-saldo">
+                <i class="bi bi-bank"></i>
+                </div>
             </div>
-            <div id="child_despesas">
-                <p id="despesas">Despesas</p>
-                <h3 id="valor_despesas">R$ 800,00</h3>
+        </div>
+        <div class="card">
+            <h3 class="despesa">Despesas</h3>
+            <div class="value">
+                R$ 800,00
+                <div class="icon-despesa">
+                <i class="bi bi-arrow-down"></i>
+              </div>
             </div>
-            <div id="cartao_de_credito">
-                <p id="cartao">Cartão de Crédito</p>
-                <h3 id="valor_cartao">R$ 50,00</h3>
+        </div>
+        <div class="card">
+            <h3 class="cartao">Cartão de Crédito</h3>
+            <div class="value">
+                R$ 950,00
+                <div class="icon-cartao">
+                <i class="bi bi-credit-card"></i>
+              </div>
             </div>
-            <div id="ganhos">
-                <p id="Ganhos">Ganhos</p>
-                <h3 id="valor_ganhos">R$ 1000,00</h3>
+        </div>
+        <div class="card">
+            <h3 class="lucro">Lucro</h3>
+            <div class="value">
+                R$ 1000,00
+                <div class="icon-lucro">
+                <i class="bi bi-arrow-up"></i>
+              </div>
             </div>
-          </div>
+        </div>
+    </div>
           <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
      <span class="selected">Abril</span>
