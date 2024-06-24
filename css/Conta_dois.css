@@ -133,8 +133,9 @@ thead{
     background: #ccc;
 }
 
-table h3{
+table h5{
     color: #FFFFFF;
+    font-weight: bold;
 }
 
 tbody td{
