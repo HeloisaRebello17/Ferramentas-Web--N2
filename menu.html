@@ -63,58 +63,99 @@
         </div>
     </div>
     <div class="container">
-        <div class="card">
-            <h3>Saldo Atual</h3>
-            <div class="value">
-                R$ 1000,00
-                <div class="icon icon-bank">🏦</div>
+      <div class="card-resultado" style="display: flex;">
+      <div class="card">
+          <h3 class="saldo">Saldo Atual</h3>
+          <div class="value">
+              R$ 0,00
+              <div class="icon-saldo">
+              <i class="bi bi-bank"></i>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <h3 class="despesa">Despesas</h3>
+          <div class="value">
+              R$ 0,00
+              <div class="icon-despesa">
+              <i class="bi bi-arrow-down"></i>
             </div>
-        </div>
-        <div class="card">
-            <h3>Despesas</h3>
-            <div class="value">
-                R$ 0,00
-                <div class="icon icon-expense">⬇️</div>
+          </div>
+      </div>
+      <div class="card">
+          <h3 class="cartao">Cartão de Crédito</h3>
+          <div class="value">
+              R$ 0,00
+              <div class="icon-cartao">
+              <i class="bi bi-credit-card"></i>
             </div>
-        </div>
-        <div class="card">
-            <h3>Cartão de Crédito</h3>
-            <div class="value">
-                R$ 0,00
-                <div class="icon icon-credit">💳</div>
+          </div>
+      </div>
+      <div class="card">
+          <h3 class="lucro">Lucro</h3>
+          <div class="value">
+              R$ 0,00
+              <div class="icon-lucro">
+              <i class="bi bi-arrow-up"></i>
             </div>
-        </div>
-        <div class="card">
-            <h3>Lucro</h3>
-            <div class="value">
-                R$ 0,00
-                <div class="icon icon-profit">⬆️</div>
-            </div>
-        </div>
-        <div class="card card-large">
-            <h3>Despesas</h3>
-            <p style="color: green;">Você ainda não possui despesas</p>
-        </div>
-        <div class="card card-large">
-            <h3>Restante mensal</h3>
-            <p>Lucro<br>Despesas<br>__________<br>Restante</p>
-        </div>
-        <div class="card card-large">
-            <h3>Cartão de Crédito</h3>
-            <div style="display: flex; gap: 10px;">
-                <button style="background-color: green; color: white; padding: 5px 10px; border: none; border-radius: 5px;">Faturas abertas</button>
-                <button style="background-color: #ddd; padding: 5px 10px; border: none; border-radius: 5px;">Faturas fechadas</button>
-            </div>
-            <p style="color: green;">Você ainda não cadastrou o cartão de crédito</p>
-        </div>
-        <div class="card card-large">
-            <h3>Lucro</h3>
-            <div class="balance">
-                <div class="icon icon-profit">⬆️</div>
-                <p>R$0,00<br>Total</p>
-            </div>
-        </div>
-    </div>
+          </div>
+      </div>
+  </div>
+  
+
+  <div class="container_despesa">
+  <h4 class="titulo_despesa">Despesas</h4>
+      <div class="card card-large">
+          
+          <div class="circle-container">
+              <div class="total_despesa">
+              <p class="total">R$0,00</p>
+              <p class="p_total">Total</p>
+          </div>
+          </div>
+          </div>
+      </div>
+      
+      <div class="restante_mensal">
+      <h4 class="titulo_restanteMensal">Restante mensal</h4>
+      <div class="card card-large">
+          <div class="container_restanteMensal">
+              <div class="barra-bicolor-vertical-menu"></div>
+              <div class="container_mensal">
+          <p class="ganhos">R$0 <p class="despesas">R$0</p><p>________________________________</p><p class="ganhosTotal-menu">R$0</p></p>
+         </div>
+      </div>
+      </div>
+  </div>
+      <div class="container_cartao">
+      <h4 class="titulo_cartao">Cartão de Crédito</h4>
+      <div class="card card-large">
+         
+          <div style="display: flex; gap: 10px;">
+              <button style="background-color: green; color: white; padding: 5px 10px; border: none; border-radius: 5px;">Faturas abertas</button>
+              <button style="background-color: #ddd; padding: 5px 10px; border: none; border-radius: 5px;">Faturas fechadas</button>
+          </div>
+          <div class="container_resultadoCartao">
+          <div class="resultado_cartao">
+          <p class="valor_cartao">
+            <u> Você não cadastrou o cartão de crédito </u>
+          </p>
+      </div>  
+      </div>
+  </div>
+  </div>
+          <div class="container_ganhos">
+              <h4 class="titulo_ganhos">Ganhos</h4>
+                  <div class="card card-large">
+                      <div class="circle-container-ganhos">
+                          <div class="total_ganhos">
+                          <p class="dinheiro_ganhos">R$0,00</p>
+                          <p class="p_total_ganhos">Total</p>
+                      </div>
+                      </div>
+                      </div>
+                  </div>
+          </div>
         
     </div>
     <!--Container Main end-->
