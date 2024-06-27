@@ -1,4 +1,8 @@
 /* Conteúdo principal */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
 .main-content { 
     flex: 1; /*O elemento vai ocupar todo o espaço disponível no contêiner flexível pai*/
     background-color: #fafafa;  

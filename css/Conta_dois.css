@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .containerPerfil {
     display: flex; /* Define um container flexível */
     align-items: baseline; /* Alinha os itens ao longo da linha base */
@@ -116,17 +121,39 @@
     top: 10px;
 
 }
+/*Estilização do dropdown*/
+.btn-secondary {
+    color: black !important;
+    background-color: transparent !important; 
+    border: none !important;
+    border-color: transparent !important;
+    margin-top:20px;
+}
+
+.btn-secondary:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.selected{
+    color:black;
+    font-size: 25px;
+    font-weight: bolder;
+}
 
 /* Estilização da tabela  */
-
- table th, table td{
+table th{
     border: 5px solid #ccc;
+    height:65px;
+}
+ table td{
+    border: 5px solid white;
     padding: 5px;
 }
 
 table{
     text-align: center;
-    width: 75%;
+    width: 87%;
 }
 
 thead{
@@ -135,11 +162,34 @@ thead{
 
 table h5{
     color: #FFFFFF;
-    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top:10px
 }
 
 tbody td{
     padding: 30px;
+    background-color: white;
+}
+
+.td-icons{
+    position: relative;
+}
+
+.icons-tabela{
+    position: absolute; 
+    bottom: 0; 
+    right: 10px;
+}
+
+.bi-trash{
+    font-size:20px;
+}
+
+.bi-pencil{
+    font-size:20px;
 }
 
 #mensalidade{
