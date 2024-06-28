@@ -2,127 +2,59 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
-input.form-control{
-    border: none;
-    color: #00C2B7;
-    font-size:27px;
-}
-input.form-control:focus{
-    border: none !important;
-    box-shadow: none !important;
-}
-.btn-primary:focus{
-    border: none !important;
-    box-shadow: none !important;
-}
-.linha_data_venc{
-    width:180px;
-    margin-top:5px;
-}
-.icone-input{
-    display: flex;
-    align-items: center;
-    margin-bottom: -17px;
-}
-.linha{
-    color:black
-}
-p{
-    color: black
-}
-.linha_descricao{
-    margin-top:5px
-}
-.form_descricao{
-    color: black;
-    border:none;
-    margin-bottom:-17px;
-    margin-left:13px;
-    width: 90%
-}
-.p-input{
-    margin-left:6px
-}
-.form_descricao:focus{
-    outline: none
-}
-.descricao{
-    margin-top:30px
-}
-.cartao{
-    margin-left:13px;
-    margin-bottom:-10px
-}
-.container-cartao{
-    margin-top:30px
-}
-.form-select{
-    border: none  !important;
-    margin-bottom: -17px;
-    margin-top: 30px
-}
-.form-select:focus{
-    border:none !important;
-    box-shadow: none !important;
-}
-.p-input{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.modal-footer{
-    border-top:none !important;
-}
+
+/*Calendário*/
 .month-indicator{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .day-of-week,
-        .date-grid {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            text-align: center;
-        }
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
 
-        .day-of-week div,
-        .date-grid button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+.day-of-week div,
+.date-grid button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-        .date-grid button {
-            position: relative;
-            border: 0;
-            width: 35px;
-            height: 35px; /* Ajuste a altura para uma forma circular */
-            border-radius: 50%;
-            background-color: transparent;
-        }
+.date-grid button {
+    position: relative;
+    border: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+}
 
-        .date-grid button:hover,
-        .date-grid button:focus {
-            outline: none;
-            background-color: #d2d2d2;
-            color: white;
-        }
+.date-grid button:hover,
+.date-grid button:focus {
+    outline: none;
+    background-color: #d2d2d2;
+    color: white;
+}
 
-        .date-grid button:first-child {
-            grid-column: 2;
-        }
+.date-grid button:first-child {
+    grid-column: 2;
+}
 
-        .day-of-week {
-            font-weight: 500;
-            letter-spacing: 0.1em;
-            font-variant: small-caps;
-            text-align: center;
-            margin-right: 20px;
-        }
+.day-of-week {
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    font-variant: small-caps;
+    text-align: center;
+    margin-right: 20px;
+}
 
-        .calendar {
-            width: 270px;
-        }
+.calendar {
+    width: 270px;
+}
+
 button.btn-secondary1{
    background-color: #d2d2d2;
    margin-top:-40px;
@@ -146,33 +78,43 @@ button.btn-secondary1{
     margin-left:20px;
     margin-right:-15px;
 }
+
+
+/*Modal*/
 .modal-header{
     border-bottom:none !important;
     margin-bottom:-17px !important;
     padding: 1.5rem 1.5rem !important;
 }
+
 .modal-body{
     margin-bottom:14px !important;
     padding: 1.5rem !important;
 }
+
 .modal-content{
     border-radius: 20px !important;
 }
+
 .btn-primary{
     background-color: #D9D9D9 !important;
     border:none !important;
     color: black !important;
 }
+
 .btn-primary:hover{
     border-color: transparent !important;
 }
+
 .brl{
     margin-bottom: 0;
     margin-top: 0;
 }
+
 .bi-calculator-fill{
     color: grey;
 }
+
 div.container input.btn-check:checked + label.btn-secondary-custom {
     background-color: #00C2B7;
     color: #fff;
@@ -185,6 +127,7 @@ div.container input.btn-check:focus + label.btn-secondary-custom {
     box-shadow: none;
     border-radius: 17px;
 }
+
 .btn-secondary-custom {
     background-color: #6c757d !important;
     color: #fff !important;
@@ -195,6 +138,7 @@ div.container input.btn-check:focus + label.btn-secondary-custom {
     background-color: #808080 !important;
     border-radius: 17px ;
 }
+
 .modal-header1{
     background-color: #00C2B7;
     border-top-left-radius: 12px;
@@ -214,36 +158,124 @@ div.container input.btn-check:focus + label.btn-secondary-custom {
     box-shadow: none !important;
     border-radius: 17px;
 }
+
 .my-custom-style .form-control {
-    height: 150px; /* Altura personalizada */
-    padding: 20px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
-    border-radius: 8px; /* Bordas arredondadas */
-    border: 1px solid #ced4da; /* Cor da borda */
+    height: 150px; 
+    padding: 20px; 
+    font-size: 16px; 
+    border-radius: 8px; 
+    border: 1px solid #ced4da; 
     transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .form-floating>.form-control{
     height:50px !important;
 }
-/* Estilos para o label */
+
 .my-custom-style label {
-    padding: 0 10px; /* Espaçamento ao redor do texto */
-    background-color: white; /* Fundo branco */
-    color: #495057; /* Cor do texto */
-    font-size: 14px; /* Tamanho da fonte */
+    padding: 0 10px; 
+    background-color: white; 
+    color: #495057; 
+    font-size: 14px; 
     transition: all 0.3s ease-in-out;
 }
 
-/* Estilos para o textarea quando está focado */
 .my-custom-style .form-control:focus {
     border-color:  transparent !important;
     box-shadow: none !important;
 }
 
-/* Ajuste para o label quando o textarea está focado ou preenchido */
 .my-custom-style .form-control:focus + label,
 .my-custom-style .form-control:not(:placeholder-shown) + label {
-    font-size: 12px; /* Reduz o tamanho da fonte */
+    font-size: 12px; 
     color: transparent !important;
-    transform: translateY(-20px); /* Move o label para cima */
+    transform: translateY(-20px); 
+}
+
+input.form-control{
+    border: none;
+    color: #00C2B7;
+    font-size:27px;
+}
+
+input.form-control:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.btn-primary:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.linha_data_venc{
+    width:180px;
+    margin-top:5px;
+}
+
+.icone-input{
+    display: flex;
+    align-items: center;
+    margin-bottom: -17px;
+}
+
+.linha{
+    color:black
+}
+
+p{
+    color: black
+}
+
+.linha_descricao{
+    margin-top:5px
+}
+
+.form_descricao{
+    color: black;
+    border:none;
+    margin-bottom:-17px;
+    margin-left:13px;
+    width: 90%
+}
+
+.p-input{
+    margin-left:6px
+}
+
+.form_descricao:focus{
+    outline: none
+}
+
+.descricao{
+    margin-top:30px
+}
+
+.cartao{
+    margin-left:13px;
+    margin-bottom:-10px
+}
+
+.container-cartao{
+    margin-top:30px
+}
+
+.form-select{
+    border: none  !important;
+    margin-bottom: -17px;
+    margin-top: 30px
+}
+
+.form-select:focus{
+    border:none !important;
+    box-shadow: none !important;
+}
+
+.p-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.modal-footer{
+    border-top:none !important;
 }

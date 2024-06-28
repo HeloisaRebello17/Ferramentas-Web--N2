@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cartão de Crédito</title>
   <link rel="stylesheet" href="css/cartao_credito.css">
   <link rel="stylesheet" href="css/menu-lateral.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
@@ -14,7 +14,6 @@
 
 <body id="body-pd">
   <header class="header" id="header">
-
   </header>
   <div class="l-navbar" id="nav-bar">
     <nav class="nav">
@@ -55,16 +54,16 @@
       </div>
     </nav>
   </div>
-  <!--Container Main start-->
+  <!--Início do conteúdo-->
   <div class="main">
-    <!-- Button trigger modal -->
+    <!-- Button modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
       Launch demo modal
     </button>
 
     <!-- Modal 1 -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog"> <!-- Adicione a classe modal-lg para aumentar o tamanho do modal -->
+      <div class="modal-dialog"> 
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Ganho</h1>
@@ -127,6 +126,7 @@
         </div>
       </div>
     </div>
+  </div>
     <!-- Fim do Modal 1 -->
 
     <!-- Modal 2 -->
@@ -196,22 +196,11 @@
     </div>
     <!-- Fim do Modal 2 -->
   </div>
-  <!--Container Main end-->
+  <!--Final do conteúdo-->
 
   <script src="js/menu.js"></script>
+  <script src="js/cadastro.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-    document.getElementById('flexSwitchCheckDefault').addEventListener('change', function() {
-      var paragraph = document.querySelector('.p-input-text');
-      if (this.checked) {
-        paragraph.textContent = 'Foi paga';
-      } else {
-        paragraph.textContent = 'Não foi paga';
-      }
-    });
-  </script>
-
 </body>
-
 </html>

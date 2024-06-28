@@ -2,43 +2,95 @@
 *{
     font-family: 'Open Sans', sans-serif;
 }
+
+/* Container restante mensal*/
 .restante_mensal{
     width:400px;
     margin-left:200px;
     margin-bottom: 50px;
     margin-top:40px;
 }
+
 .titulo_restanteMensal{
     margin-left: 40px;
 }
+
 .container_restanteMensal{
     display: flex;
     margin-left:40px;
     margin-top:15px
 }
+
 .barra-bicolor-vertical {
     width: 23px; 
     height: 150px;
     border-radius: 13px;
     background: linear-gradient(to bottom, #99CB85 20%, #C20000 20%);
 }
+
 .container_mensal{
     display: flex;
     flex-direction: column; 
     margin-left:20px;
 }
+
+
+/* Container Ganhos*/
 .ganhos{
     color:#99CB85;
     font-size:20px
 }
+
 .ganhosTotal{
     color:#99CB85;
     font-size:20px;
 }
+
+.circle-container-ganhos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 15px solid #99CB85; 
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 80px ;
+}
+
+.total_ganhos{
+    display: flex;
+    flex-direction:column;
+    margin-top:15px;
+}
+
+.dinheiro_ganhos{
+    margin-bottom:0px;
+}
+
+.p_total_ganhos{
+    font-size:17px;
+}
+
+.container_ganhos{
+    width:400px;
+    margin-left: 200px;
+}
+
+.titulo_ganhos{
+    margin-left: 40px;
+}
+
+
+/* Container Cartão de Crédito*/
 .container_cartao{
     width:400px;
     margin-left: -5px
 }
+
 .titulo_cartao{
     margin-left: 40px;
 }
@@ -48,19 +100,20 @@
     flex-direction: row; 
     justify-content: space-between;
 }
+
 .valor_cartao{
     color: #99CB85;
 }
+
 .valor{
     color:red
 }
+
 .container_resultadoCartao{
     margin-top:15px
 }
 
-.bi-credit-card{
-    font-size: 25px;
-}
+/* Container Despesas */
 .circle-container {
     display: flex;
     justify-content: center;
@@ -103,45 +156,12 @@
 .titulo_despesa{
     margin-left: 40px;
 }
-.circle-container-ganhos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    border: 15px solid #99CB85; 
-    border-radius: 50%;
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    position: relative;
-    margin-left: 80px ;
-}
-.total_ganhos{
-    display: flex;
-    flex-direction:column;
-    margin-top:15px;
- 
-}
 
-.dinheiro_ganhos{
-    margin-bottom:0px;
-}
-
-.p_total_ganhos{
-    font-size:17px;
-}
-
-.container_ganhos{
-    width:400px;
-    margin-left: 200px;
-}
-
-.titulo_ganhos{
-    margin-left: 40px;
-}
 
 /* header*/
+.bi-credit-card{
+    font-size: 25px;
+}
 .icon-cartao{
     width:40px;
     height:40px; 
