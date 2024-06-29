@@ -3,14 +3,11 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.containerPerfil {
-    display: flex; /* Define um container flexível */
-    align-items: baseline; /* Alinha os itens ao longo da linha base */
-    justify-content: center; /* Centraliza os itens no container */
-    flex-direction: row; /* Define a direção dos itens em uma linha horizontal */
-    position: relative;
-    left: 900px;
-    gap: 10px;
+.container_iconePerfil1{
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 900px;
 }
 
 /* css referente à página de transações */
