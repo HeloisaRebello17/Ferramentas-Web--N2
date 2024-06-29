@@ -10,6 +10,66 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 634px;
+            margin: 0;
+        }
+        .profile-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 1078px;
+        }
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .profile-header h2 {
+            margin: 0;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+        .profile-content {
+            margin-top: 125px;
+        }
+        .profile-content label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .profile-content input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .update-button {
+            background-color: #a4d3a2;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+            text-align: center;
+            width: 100%;
+        }
+        .update-button:hover {
+            background-color: #8cc389;
+        }
+    </style>
+    
 </head>
 
 <body id="body-pd">
@@ -61,21 +121,21 @@
     </div>
     <!--Container Main start-->
     
-    <div class="principal-perfil">
-        <h1 class="perfil">Perfil</h1>
-   <div class="container-perfil">
-    <div class="conta">
-    <h3>Dados da conta</h3>
-    <h6>Nome</h6>
-    <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
-    <h6>E-mail</h6>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    <div class="profile-container">
+        <div class="profile-header">
+            <h2>Meu Perfil</h2>
+            <div class="profile-pic">
+                <img src="https://via.placeholder.com/40" alt="Profile Picture">
+            </div>
+        </div>
+        <div class="profile-content">
+            <label for="name">Nome</label>
+            <input type="text" id="name" value="Fulano">
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" value="fulano@gmail.com">
+            <button class="update-button">Atualizar Dados</button>
+        </div>
     </div>
-      </div>
-    </div>
-   </div>
 
     <!--Container Main end-->
     <script src="js/menu.js"></script>
