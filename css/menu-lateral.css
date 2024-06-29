@@ -42,7 +42,46 @@ a {
     padding: 0 1rem;
     background-color: #EAEAEA;
     z-index: var(--z-fixed);
-    transition: .5s
+    transition: .5s;
+    margin-bottom:30px;
+}
+
+.header .dropdown {
+    margin: 0 auto; /* Centraliza o dropdown */
+    position: static;
+    z-index: 1050;
+}
+
+.btn-secondary {
+    color: black !important;
+    background-color: transparent !important; 
+    border: none !important;
+    border-color: transparent !important;
+}
+
+.btn-secondary:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.selected{
+    color:black;
+    font-size: 35px;
+}
+
+.bi-person-circle{
+    font-size: 28px;
+}
+
+.container_iconePerfil{
+     display: flex;
+     flex-direction: row; 
+     align-items: center;
+}
+
+.fulano{
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .bi-chevron-right,
