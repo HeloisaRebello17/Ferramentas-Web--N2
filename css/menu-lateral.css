@@ -184,6 +184,10 @@ a {
     transition: .3s;
 }
 
+.bi-plus{
+    color: #fff
+}
+
 .dropdown-toggle.botao-dropdown .icon-btn {
     display: flex;
     align-items: center;
