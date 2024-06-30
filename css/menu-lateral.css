@@ -245,10 +245,6 @@ i {
 }
 
 
-.body-pd {
-    /* padding-left: calc(var(--nav-width) + 1rem) */
-}
-
 
 .active {
     color: #99CD85
