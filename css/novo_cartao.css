@@ -310,3 +310,9 @@ p{
 .modal-footer{
     border-top:none !important;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

@@ -1,0 +1,6 @@
+.container_conta_inicial{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 450px;
+}
