@@ -79,8 +79,7 @@
     margin-right: 20px;
 }
 
-.child3{
-}
+
 
 .calendar {
     width: 270px;
@@ -309,4 +308,55 @@ p{
 
 .modal-footer{
     border-top:none !important;
+}
+
+.resultado_cartao{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+.valor_cartao{
+    text-decoration: underline; 
+    color:#808080;
+    margin-left:10px
+}
+
+.valor{
+    color:red;
+    margin-right:10px
+}
+
+.container_resultadoCartao{
+    margin-top:15px
+}
+
+.barra-bicolor {
+    width: 90%; 
+    height: 30px; 
+    margin:0 auto;
+    border-radius: 20px;
+    background: linear-gradient(to right, #D9D9D9 30%, #D9D9D9 30%);
+}
+
+.saldo_cartao{
+    color: #00C2B7;
+    margin-top:10px;
+    margin-left: 10px;
+    margin-bottom:2px;
+}
+
+.elemento_dois_novo{
+    width: 400px; /* Define a largura do elemento */
+    height: 240px; /* Define a altura do elemento */
+    position: relative;
+    top: 60px;
+    margin-left:50px;
+    background-color: #FFFFFF; 
+    border-radius: 25px; /* Define bordas arredondadas*/
+    padding: 10px;   
+}
+
+.container_resultado{
+    margin-top:10px
 }
