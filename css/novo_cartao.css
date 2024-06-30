@@ -309,7 +309,6 @@ p{
 .modal-footer{
     border-top:none !important;
 }
-
 .resultado_cartao{
     display: flex; 
     flex-direction: row; 
