@@ -21,11 +21,22 @@
 
 body .body-pd {
     
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     font-family: var(--body-font);
     font-size: 18px;
     transition: .5s;
     background-color: #EAEAEA !important;
+}
+
+body {
+    display: flex;
+    overflow: hidden;
+    max-height: 100vh
+}
+
+#content {
+    overflow: auto;
+    width: 100%
 }
 
 a {
@@ -131,7 +142,7 @@ a {
 }
 
 .l-navbar {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: -30%;
     width: var(--nav-width);
@@ -235,7 +246,7 @@ i {
 
 
 .body-pd {
-    padding-left: calc(var(--nav-width) + 1rem)
+    /* padding-left: calc(var(--nav-width) + 1rem) */
 }
 
 
@@ -267,7 +278,7 @@ i {
 @media screen and (min-width: 768px) {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
-        padding-left: calc(var(--nav-width) + 0rem);
+        /* padding-left: calc(var(--nav-width) + 0rem); */
         background-color: #EAEAEA !important;
       
 
@@ -293,7 +304,7 @@ i {
     }
 
     .body-pd {
-        padding-left: calc(var(--nav-width) + 170px);
+        /* padding-left: calc(var(--nav-width) + 170px); */
         top: 0%;
         background-color: #EAEAEA;
         

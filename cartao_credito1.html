@@ -14,6 +14,56 @@
 </head>
 
 <body id="body-pd">
+  <div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+      <div>
+        <div>
+          <img class="header_img" src="imagem/logo.png" alt="">
+        </div>
+        <div class="botao-icon">
+          <button class="botao" id="botao">
+            <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
+          </button>
+          <div class="dropdown" style="position: unset">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header_toggle">
+          <i class='bi bi-chevron-right' id="header-toggle"></i>
+        </div>
+        <div class="nav_list">
+          <a href="#" class="nav_link active">
+            <i class="bi bi-house-door"></i>
+            <span class="nav_name">Página Inicial</span>
+          </a>
+          <a href="#" class="nav_link">
+            <i class="bi bi-bank"></i>
+            <span class="nav_name">Contas</span>
+          </a>
+          <a href="#" class="nav_link">
+            <i class="bi bi-list-ul"></i>
+            <span class="nav_name">Transações</span>
+          </a>
+          <a href="#" class="nav_link">
+            <i class="bi bi-credit-card"></i>
+            <span class="nav_name">Cartões de Crédito</span>
+          </a>
+          <a href="#" class="nav_link">
+            <i class="bi bi-gear"></i>
+            <span class="nav_name">Configurações</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="content">
     <header class="header" id="header">
       <div class="dropdown">
         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -39,45 +89,6 @@
       <span class="fulano">Fulano</span>
     </div>
     </header>
-    <div class="l-navbar" id="nav-bar">
-      <nav class="nav">
-        <div>
-          <div>
-            <img class="header_img" src="imagem/logo.png" alt="">
-          </div>
-          <div class="botao-icon">
-            <button class="botao" id="botao">
-              <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
-            </button>
-          </div>
-          <div class="header_toggle">
-            <i class='bi bi-chevron-right' id="header-toggle"></i>
-          </div>
-          <div class="nav_list">
-            <a href="#" class="nav_link active">
-              <i class="bi bi-house-door"></i>
-              <span class="nav_name">Página Inicial</span>
-            </a>
-            <a href="#" class="nav_link">
-              <i class="bi bi-bank"></i>
-              <span class="nav_name">Contas</span>
-            </a>
-            <a href="#" class="nav_link">
-              <i class="bi bi-list-ul"></i>
-              <span class="nav_name">Transações</span>
-            </a>
-            <a href="#" class="nav_link">
-              <i class="bi bi-credit-card"></i>
-              <span class="nav_name">Cartões de Crédito</span>
-            </a>
-            <a href="#" class="nav_link">
-              <i class="bi bi-gear"></i>
-              <span class="nav_name">Configurações</span>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </div>
     <!--Início do conteúdo-->
     <div class="header">
         <h1>ABRIL</h1>
@@ -183,6 +194,9 @@
             </div>
         </div>
     </div>
+
+  </div>
+    
    
         
     </div>
