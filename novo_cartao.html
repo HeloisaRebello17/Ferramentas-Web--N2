@@ -123,17 +123,27 @@
                 </select>
                 <hr>
               </div>
-              <div class="container-cartao">
-                <p class="cartao">Cartão</p>
+              <div class="form_local">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Cartão</option>
+                  <option value="1">Visa</option>
+                  <option value="2">Mastercard</option>
+                  <option value="3">ELO</option>
+                  <option value="3">Outro</option>
+                </select>
                 <hr>
               </div>
               <div class="data_venc">
-                <input class="form_descricao" name="data_venc" type="text" placeholder="Data de Vencimento" />
+                <input class="form_descricao" name="data_venc" type="text" placeholder="Dia de Vencimento" />
+                <hr class="linha_data_venc">
+              </div>
+              <div class="data_venc">
+                <input class="form_descricao" name="data_venc" type="text" placeholder="Dia de fechamento" />
                 <hr class="linha_data_venc">
               </div>
           </div>
           <div class="modal-footer">
-            <a href="cartao_credito1.html"><button type="button" class="btn btn-primary">Save changes</button></a>
+            <a href="cartao_credito1.html"><button type="button" class="btn btn-primary">Salvar Mudanças</button></a>
           </div>
         </div>
       </div>
