@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  
 </head>
 
 <body id="body-pd">
@@ -24,10 +27,22 @@
                 <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
               </button>
               <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+                <li>
+                    <a class="dropdown-item" href="#" style="color: red;">
+                        <img src="imagem/setadespesas.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;"> Despesas
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#" style="color: green;">
+                        <img src="imagem/setaganhos.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;"> Ganhos
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" href="#" style="color: #00c2b7;">
+                        <img src="imagem/carteira.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;"> Despesa cartão
+                    </a>
+                </li>
+            </ul>
           </div>
           <div class="header_toggle">
             <i class='bi bi-chevron-right' id="header-toggle"></i>
@@ -84,8 +99,9 @@
       </div>
       </header>
     <!--Container Main start-->
+  
     <div class="container">
-      <div class="card-resultado" style="display: flex;">
+      <div style="display: flex;">
       <div class="card">
           <h3 class="saldo">Saldo Atual</h3>
           <div class="value">
@@ -122,11 +138,10 @@
             </div>
           </div>
       </div>
-  </div>
+    </div>
   
-
-  <div class="container_despesa">
-  <h4 class="titulo_despesa">Despesas</h4>
+    <div class="container_despesa">
+      <h4 class="titulo_despesa">Despesas</h4>
       <div class="card card-large">
           
           <div class="circle-container">
@@ -136,20 +151,21 @@
           </div>
           </div>
           </div>
-      </div>
+    </div>
       
-      <div class="restante_mensal">
+    <div class="restante_mensal">
       <h4 class="titulo_restanteMensal">Restante mensal</h4>
       <div class="card card-large">
           <div class="container_restanteMensal">
               <div class="barra-bicolor-vertical-menu"></div>
               <div class="container_mensal">
-          <p class="ganhos">R$0 <p class="despesas">R$0</p><p>________________________________</p><p class="ganhosTotal-menu">R$0</p></p>
+          <p class="ganhos">R$0 <p class="despesas">R$0</p><p>________________________________</p><p class="ganhosTotal-menu">R$0</p>
+          </p>
          </div>
       </div>
       </div>
-  </div>
-      <div class="container_cartao">
+   </div>
+    <div class="container_cartao">
       <h4 class="titulo_cartao">Cartão de Crédito</h4>
       <div class="card card-large">
          
@@ -162,10 +178,10 @@
           <p class="valor_cartao">
             <u> Você não cadastrou o cartão de crédito </u>
           </p>
-      </div>  
+          </div>  
+          </div>
       </div>
-  </div>
-  </div>
+     </div>
           <div class="container_ganhos">
               <h4 class="titulo_ganhos">Ganhos</h4>
                   <div class="card card-large">
@@ -177,8 +193,6 @@
                       </div>
                       </div>
                   </div>
-          </div>
-        
     </div>
     <!--Container Main end-->
     <script src="js/menu.js"></script>
