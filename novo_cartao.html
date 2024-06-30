@@ -63,8 +63,26 @@
       </div>
       <div id="content">
         <header class="header" id="header">
-         
-          <div class="container_iconePerfil" style="position: relative; left: 900px;">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="selected">ABRIL</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Janeiro</a></li>
+                <li><a class="dropdown-item" href="#">Fevereiro</a></li>
+                <li><a class="dropdown-item" href="#">Março</a></li>
+                <li><a class="dropdown-item" href="#">Abril</a></li>
+                <li><a class="dropdown-item" href="#">Maio</a></li>
+                <li><a class="dropdown-item" href="#">Junho</a></li>
+                <li><a class="dropdown-item" href="#">Julho</a></li>
+                <li><a class="dropdown-item" href="#">Agosto</a></li>
+                <li><a class="dropdown-item" href="#">Setembro</a></li>
+                <li><a class="dropdown-item" href="#">Outubro</a></li>
+                <li><a class="dropdown-item" href="#">Novembro</a></li>
+                <li><a class="dropdown-item" href="#">Dezembro</a></li>
+            </ul>
+        </div>
+          <div class="container_iconePerfil">
           <i class="bi bi-person-circle"></i>
           <span class="fulano">Fulano</span>
         </div>
@@ -74,7 +92,7 @@
     <!--Container Main start-->
     <h2 id="titulo">CARTÕES DE CRÉDITO</h2>
     <div class="main">
-        <div class="container">
+        <div class="container" style="display:flex;">
             <div>
             <div class="elemento_cartao" style="margin-bottom:10px">
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
