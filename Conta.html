@@ -14,53 +14,58 @@
 </head>
 
 <body id="body-pd">
-    <header class="header" id="header">
-        <div class="containerPerfil">
-            <h1 class="icon4"><i class="bi bi-person-circle"></i></h1>
-            <div class="Fulano">
-                <p>FULANO</p>
-            </div>
+  <div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+      <div>
+        <div>
+          <img class="header_img" src="imagem/logo.png" alt="">
         </div>
-    </header>
-    <!--Menu lateral-->
-    <div class="l-navbar" id="nav-bar">
-        <nav class="nav">
-            <div>
-                <div>
-                    <img class="header_img" src="imagem/logo.png" alt="Logo">
-                </div>
-                <div class="botao-icon">
-                    <button class="botao" id="botao">
-                        <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
-
-                    </button>
-                </div>
-                <div class="header_toggle">
-                    <i class='bi bi-chevron-right' id="header-toggle"></i>
-                </div>
-                <div class="nav_list">
-                    <a href="#" class="nav_link active">
-                        <i class="bi bi-house-door"></i>
-                        <span class="nav_name">Página Inicial</span>
-                    </a>
-                    <a href="#" class="nav_link">
-                        <i class="bi bi-bank"></i>
-                        <span class="nav_name">Contas</span>
-                    </a>
-                    <a href="#" class="nav_link">
-                        <i class="bi bi-list-ul"></i>
-                        <span class="nav_name">Transações</span>
-                    </a>
-                    <a href="#" class="nav_link">
-                        <i class="bi bi-credit-card"></i>
-                        <span class="nav_name">Cartões de Crédito</span>
-                    </a>
-                    <a href="#" class="nav_link">
-                        <i class="bi bi-gear"></i>
-                        <span class="nav_name">Configurações</span>
-                    </a>
-        </nav>
+      
+          <div class="dropdown" style="position: unset">
+            <button class=" botao" id="botao"type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+        <div class="header_toggle">
+          <i class='bi bi-chevron-right' id="header-toggle"></i>
+        </div>
+        <div class="nav_list">
+          <a href="#" class="nav_link active">
+            <i class="bi bi-house-door"></i>
+            <span class="nav_name">Página Inicial</span>
+          </a>
+          <a href="#" class="nav_link">
+            <i class="bi bi-bank"></i>
+            <span class="nav_name">Contas</span>
+          </a>
+          <a href="#" class="nav_link">
+            <i class="bi bi-list-ul"></i>
+            <span class="nav_name">Transações</span>
+          </a>
+          <a href="#" class="nav_link">
+            <i class="bi bi-credit-card"></i>
+            <span class="nav_name">Cartões de Crédito</span>
+          </a>
+          <a href="#" class="nav_link">
+            <i class="bi bi-gear"></i>
+            <span class="nav_name">Configurações</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="content">
+    <header class="header" id="header">
+      <div class="container_iconePerfil1">
+      <i class="bi bi-person-circle"></i>
+      <span class="fulano">Fulano</span>
     </div>
+    </header>
     <!--Fim do menu lateral-->
 
     <!--Container Main start-->
@@ -121,7 +126,7 @@
                                 <div class="form-group">
                                     <label for="instituicao">Instituição financeira</label>
                                     <div>
-                                        <img src="nubank-logo.png" alt="Nubank" >
+                                        <img src="imagem/Nubank.png" alt="Nubank" id="nub">
                                         <input type="text" id="instituicao" name="instituicao" placeholder="Ex: nubank">
                                     </div>
                                 </div>
@@ -136,8 +141,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            <button type="button" class="btn btn-primary">Salvar mudanças</button>
                         </div>
                         </div>
                     </div>

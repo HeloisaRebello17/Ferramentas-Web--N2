@@ -1,15 +1,14 @@
 function toggleDropdown(dropdownId) {
     var dropdown = document.getElementById(dropdownId);
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
 }
 
-function selectItem(selectedItemId, dropdownId, item) {
-    document.getElementById(selectedItemId).textContent = item;
-    document.getElementById(dropdownId).style.display = "none";
+function selectItem(selectedId, dropdownId, value) {
+    document.getElementById(selectedId).innerText = value;
+    document.getElementById(dropdownId).style.display = 'none';
 }
 
-function selectTheme(selectedItemId, dropdownId, theme) {
-    document.getElementById(selectedItemId).textContent = theme === 'Claro' ? 'Modo Claro' : 'Modo Escuro';
-    document.getElementById(dropdownId).style.display = "none";
+function selectTheme(selectedId, dropdownId, theme) {
+    selectItem(selectedId, dropdownId, theme);
     document.body.setAttribute('data-theme', theme === 'Claro' ? 'light' : 'dark');
 }

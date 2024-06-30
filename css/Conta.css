@@ -9,6 +9,12 @@
 }
 
 
+.container_iconePerfil1{
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 900px;
+}
 
 .elemento {
     width: 300px; 
@@ -185,4 +191,8 @@
     top: 3px;
     width: 18px;
 
+}
+#nub{
+    width: 35px;
+    height: 35px;
 }

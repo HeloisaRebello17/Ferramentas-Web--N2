@@ -15,8 +15,32 @@
 
 <body id="body-pd">
     <header class="header" id="header">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="selected">ABRIL</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Janeiro</a></li>
+            <li><a class="dropdown-item" href="#">Fevereiro</a></li>
+            <li><a class="dropdown-item" href="#">Março</a></li>
+            <li><a class="dropdown-item" href="#">Abril</a></li>
+            <li><a class="dropdown-item" href="#">Maio</a></li>
+            <li><a class="dropdown-item" href="#">Junho</a></li>
+            <li><a class="dropdown-item" href="#">Julho</a></li>
+            <li><a class="dropdown-item" href="#">Agosto</a></li>
+            <li><a class="dropdown-item" href="#">Setembro</a></li>
+            <li><a class="dropdown-item" href="#">Outubro</a></li>
+            <li><a class="dropdown-item" href="#">Novembro</a></li>
+            <li><a class="dropdown-item" href="#">Dezembro</a></li>
+        </ul>
+    </div>
+      <div class="container_iconePerfil">
+      <i class="bi bi-person-circle"></i>
+      <span class="fulano">Fulano</span>
+    </div>
     </header>
     <div class="l-navbar" id="nav-bar">
+      
       <nav class="nav">
         <div>
           <div>
@@ -56,15 +80,12 @@
       </nav>
     </div>
     <!--Início do conteúdo-->
-    <div class="header">
-        <h1>ABRIL</h1>
-    </div>
     <div class="container">
         <div class="card-resultado" style="display: flex;">
         <div class="card">
             <h3 class="saldo">Saldo Atual</h3>
             <div class="value">
-                R$ -800,00
+                R$ 200,00
                 <div class="icon-saldo">
                 <i class="bi bi-bank"></i>
                 </div>
@@ -128,14 +149,14 @@
         <h4 class="titulo_cartao">Cartão de Crédito</h4>
         <div class="card card-large">
            
-            <div style="display: flex; gap: 10px;">
+            <div style="display: flex; gap: 10px; margin-bottom:10px">
                 <button style="background-color: green; color: white; padding: 5px 10px; border: none; border-radius: 5px;">Faturas abertas</button>
                 <button style="background-color: #ddd; padding: 5px 10px; border: none; border-radius: 5px;">Faturas fechadas</button>
             </div>
             <div class="container_resultadoCartao">
             <div class="resultado_cartao">
             <p class="valor_cartao">
-              <u> Você não cadastrou o cartão de crédito </u>
+              <u> Você ainda não cadastrou <br>o saldo do cartão de crédito </u>
             </p>
         </div>  
         </div>

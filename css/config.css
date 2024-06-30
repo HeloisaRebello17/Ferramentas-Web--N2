@@ -1,144 +1,89 @@
+:root {
+    --header-height: 60px;
+    --primary-bg-color: #EAEAEA;
+    --container-bg-color: white;
+    --text-color: black;
+    --title-color: black; 
+    --user-text-color: black;
+    --icon-color: black; 
+}
 
 body {
-    font-family: Arial, sans-serif;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.sidebar {
-    height: 100vh;
+body.dark-mode {
+    --primary-bg-color: #333333;
+    --container-bg-color: white;
+    --text-color: #FFFFFF;
+    --title-color: #FFFFFF;
+    --user-text-color: #FFFFFF;
+    --icon-color: #FFFFFF; 
 }
 
-.sidebar-sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: calc(100vh - 148px);
-    padding-top: .5rem;
-    overflow-x: hidden;
-    overflow-y: auto;
+.dropdown1.show {
+    display: block;
 }
 
-.sidebar .nav-link img {
-    width: 30px;
-    height: 30px;
+.title {
+    margin-left: 70px;
+    margin-top: 20px;
+    color: var(--title-color);
 }
 
-.sidebar .nav-link.active img {
-    background-color: #c0e0c0;
-    border-radius: 50%;
-    padding: 5px;
+.header {
+    width: 100%;
+    height: var(--header-height);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-bg-color);
+    transition: .5s;
 }
 
-.btn-toolbar .btn img {
-    width: 20px;
-    height: 20px;
-}
-
-.container-config{
-    border-radius: 20px;
-    height:260px;
-    width: 1050px;
-    background-color: white;
-    margin-left:100px
-    
-}
-.principal-config{
-    background-color: #EAEAEA;
-    
-}
-
-.main {
-    padding: 20px;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
-
-:root {
-    --background-color-light: #ffffff;
-    --text-color-light: #000000;
-    --background-color-dark: #363537;
-    --text-color-dark: #FAFAFA;
-}
-
-body[data-theme="light"] {
-    background-color: var(--background-color-light);
-    
-}
-
-body[data-theme="dark"] {
-    background-color: var(--background-color-dark);
-  
-}
-     body {
-        height: 100%;
-        margin: 0; /* Remove a margem padrão */
-        overflow: hidden;
-        display: flex;
-        width: 100%;
-        font-family: "Open Sans", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-    }
-
-
-    img {
-        width: 50px;
-        height: 50px;
-    }
-
-.img-setinha{
-            width: 30px;
-            height: 30px;
-            margin-left: 80px;
-        }
-    .container-right{
-        padding-left: 90px;
-        padding-top: 15px;
-        padding-right: 30px;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        background-color: #EAEAEA;
-        flex-direction: column;
-    }
-
-    .perfil{
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-        gap: 10px;
-       
-    }
-    .name{
-        margin-right: 0px;
-        
-    }
-   .card{
+.container-right {
+    padding-left: 90px;
+    padding-top: 75px;
+    padding-right: 30px;
+    display: flex;
     width: 100%;
     height: 100%;
-    background-color: white;
-    border-radius: 15px;
-   }
-.idioma-moeda{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.cards-combobox{
-    padding: 30px 39px;
-    display: flex;
-    justify-content: space-between;
+    background-color: var(--primary-bg-color);
     flex-direction: column;
-    gap: 40px
-    ;
 }
-.aparencia-alteracoes{
+
+.card {
+    width: 100%;
+    background-color: var(--primary-bg-color);
+    border-radius: 15px;
+    padding: 30px;
+    transition: background-color 0.3s;
+}
+
+.cards-combobox {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.idioma-moeda, .aparencia-alteracoes {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    
 }
+
 .combobox {
-    width: 200px;
+    width: 270px;
     border-bottom: 1px solid #ccc;
     border-radius: 5px;
     cursor: pointer;
@@ -147,42 +92,96 @@ body[data-theme="dark"] {
 
 .selected-item, .dropdown-item {
     padding: 10px;
-    background-color: #fff;
+    background-color: var(--container-bg-color);
 }
 
-.dropdown {
+.dropdown1 {
     display: none;
     position: absolute;
     width: 100%;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
-   
+    background-color: var(--container-bg-color);
 }
 
 .dropdown-item:hover {
     background-color: #f1f1f1;
 }
+
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4CAF50; /* Verde */
-    color: black; /* Texto Preto */
+    background-color: #99CB85;
+    color: black;
     padding: 10px 20px;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s;
-    height: 70px;
+    height: 50px;
 }
 
 .button:hover {
-    background-color: #45a049; /* Um verde um pouco mais escuro */
+    background-color: #99CB85;
 }
-.container-button{
+
+.container-button {
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
+.content {
+    background-color: var(--container-bg-color);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown1 {
+    margin: 20px;
+}
+
+.dropdown-item {
+    cursor: pointer;
+    padding: 10px;
+    background-color: var(--container-bg-color);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin: 5px 0;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: var(--container-bg-color);
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 25px !important;
+    width: 900px;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.container_iconePerfil1 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 900px;
+}
+.container_iconePerfil1 i {
+    color: var(--icon-color); /* Aplicando a cor do ícone */
+}
+.fulano {
+    margin-left:10px;
+    color: var(--user-text-color); /* Usando a variável para a cor do texto do usuário */
+}

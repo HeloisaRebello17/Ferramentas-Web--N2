@@ -102,6 +102,7 @@
 
 .valor_cartao{
     color: #99CB85;
+    display: flex;
 }
 
 .valor{
@@ -109,8 +110,12 @@
 }
 
 .container_resultadoCartao{
-    margin-top:15px
+    margin-top:20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 
 /* Container despesa*/
@@ -160,6 +165,11 @@
 
 
 /* header*/
+.container-abril{
+    position: fixed;
+    margin-top:0px
+}
+
 .icon-cartao{
     width:40px;
     height:40px; 
