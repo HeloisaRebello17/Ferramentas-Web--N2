@@ -2,141 +2,318 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conta</title>
-    <link rel="stylesheet" href="css/perfil.css">
-    <link rel="stylesheet" href="css/menu-lateral.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 634px;
-            margin: 0;
-        }
-        .profile-container {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 1078px;
-        }
-        .profile-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .profile-header h2 {
-            margin: 0;
-        }
-        .profile-header img {
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-        }
-        .profile-content {
-            margin-top: 125px;
-        }
-        .profile-content label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .profile-content input {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .update-button {
-            background-color: #a4d3a2;
-            border: none;
-            border-radius: 20px;
-            color: white;
-            cursor: pointer;
-            padding: 10px 20px;
-            text-align: center;
-            width: 100%;
-        }
-        .update-button:hover {
-            background-color: #8cc389;
-        }
-    </style>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <link rel="stylesheet" href="css/perfil.css">
+  <link rel="stylesheet" href="css/menu-lateral.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .profile-container {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 800px;
+      height: 300px;
+    }
+
+    .profile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .profile-content {
+      margin-top: 10px;
+    }
+
+    .profile-content label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .profile-content input {
+      width: 169px;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .update-button {
+      background-color: #a4d3a2;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+      padding: 10px 20px;
+      text-align: center;
+      width: 180px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .update-button:hover {
+      background-color: #8cc389;
+    }
+
+    .name {
+      width: 90px;
+      color: black;
+      border: none;
+    }
+
+    .email {
+      width: 90px
+    }
+
+    .container_button {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    .container_perfil {
+      margin-left: 150px;
+      margin-top: 10px
+    }
+
+    .titulo_perfil {
+      color: #99CB85;
+      margin-bottom: 20px;
+      font-size: 27px
+    }
+
+    h2 {
+      margin-bottom: 40px
+    }
+
+    .container_iconePerfil1 {
+      margin-left: 900px
+    }
+
+    .bi-pencil {
+      font-size: 18px;
+    }
+
+    .botao_editar {
+      border: none !important;
+      background-color: white;
+      outline: none !important;
+      margin-left: 1px;
+    }
+
+    /*Modal*/
+    .modal-content {
+      background-color: #d3d3d3;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 450px;
+      text-align: center;
+    }
+
+    .container h2 {
+      margin-bottom: 20px;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 5px 0 0;
+      border: 1px solid #d3d3d3;
+      border-radius: 5px;
+      background-color: #d3d3d3;
+    }
+
+    .container input[type="text"]:hover,
+    .container input[type="password"]:hover {
+      outline: none;
+    }
+
+    .container input[type="text"]:focus,
+    .container input[type="password"]:focus {
+      outline: none;
+    }
+
+    .botao_modal {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
+      color: #000;
+      cursor: pointer;
+      font-size: 16px;
+      text-decoration: none;
+      /* Remove o sublinhado padrão dos links */
+      display: inline-block;
+      /* Garante que o link se comporte como um bloco */
+      transition: background-color 0.3s ease, color 0.3s ease;
+      /* Transição suave de cores */
+      outline: none !important;
+    }
+
+    .btn-primary:focus {
+      border: none !important;
+      box-shadow: none !important;
+    }
+
+    .botao_modal:hover,
+    .botao_modal:focus {
+      background-color: #f0f0f0;
+      color: #000;
+      /* Mantém a cor do texto ao passar o mouse */
+      outline: none !important;
+      box-shadow: transparent !important;
+      border-color: transparent !important;
+      /* Remove a borda de foco ao clicar */
+    }
+
+    a:hover,
+    a:focus {
+      box-shadow: none;
+    }
+
+    .hr_modal {
+      margin-top: 0px
+    }
+
+    input {
+      margin-bottom: 0px;
+    }
+
+    .modal-header {
+      border: none;
+    }
+
+    .modal-footer {
+      border: none;
+    }
+  </style>
+
 </head>
 
 <body id="body-pd">
+  <div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+      <div>
+        <div>
+          <img class="header_img" src="imagem/logo.png" alt="">
+        </div>
+        <div class="dropdown" style="position: unset">
+          <button class=" botao" id="botao" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#" style="color: red;">
+                <img src="imagem/setadespesas.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
+                Despesas
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" style="color: green;">
+                <img src="imagem/setaganhos.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
+                Ganhos
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" style="color: #00c2b7;">
+                <img src="imagem/carteira.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
+                Despesa cartão
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header_toggle">
+          <i class='bi bi-chevron-right' id="header-toggle"></i>
+        </div>
+        <div class="nav_list">
+          <a href="menu com aviso.html" class="nav_link active">
+            <i class="bi bi-house-door"></i>
+            <span class="nav_name">Página Inicial</span>
+          </a>
+          <a href="Conta.html" class="nav_link">
+            <i class="bi bi-bank"></i>
+            <span class="nav_name">Contas</span>
+          </a>
+          <a href="Conta_dois.html" class="nav_link">
+            <i class="bi bi-list-ul"></i>
+            <span class="nav_name">Transações</span>
+          </a>
+          <a href="novo_cartao.html" class="nav_link">
+            <i class="bi bi-credit-card"></i>
+            <span class="nav_name">Cartões de Crédito</span>
+          </a>
+          <a href="configuracao.html" class="nav_link">
+            <i class="bi bi-gear"></i>
+            <span class="nav_name">Configurações</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="content">
     <header class="header" id="header">
-        <div class="containerPerfil">
-            <h1 class="icon4"><i class="bi bi-person-circle"></i></h1>
-            <div class="Fulano">
-                <p>FULANO</p>
-            </div>
-        </div>
+      <div class="container_iconePerfil1">
+        <i class="bi bi-person-circle"></i>
+        <span class="fulano">Fulano</span>
+      </div>
     </header>
-    <div class="l-navbar" id="nav-bar">
-        <nav class="nav">
-            <div>
-                <div>
-                    <img class="header_img" src="imagem/logo.png" alt="">
-                </div>
-                <div class="botao-icon">
-                    <button class="botao" id="botao">
-                        <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
-
-                    </button>
-                </div>
-                <div class="header_toggle">
-                    <i class='bi bi-chevron-right' id="header-toggle"></i>
-                </div>
-                <div class="nav_list">
-                    <a href="#" class="nav_link active">
-                        <i class="bi bi-house-door"></i>
-                        <span class="nav_name">Página Inicial</span>
-                    </a>
-                    <a href="#" class="nav_link">
-                        <i class="bi bi-bank"></i>
-                        <span class="nav_name">Contas</span>
-                    </a>
-                    <a href="#" class="nav_link">
-                        <i class="bi bi-list-ul"></i>
-                        <span class="nav_name">Transações</span>
-                    </a>
-                    <a href="#" class="nav_link">
-                        <i class="bi bi-credit-card"></i>
-                        <span class="nav_name">Cartões de Crédito</span>
-                    </a>
-                    <a href="#" class="nav_link">
-                        <i class="bi bi-gear"></i>
-                        <span class="nav_name">Configurações</span>
-                    </a>
-        </nav>
-    </div>
     <!--Container Main start-->
-    
-    <div class="profile-container">
-        <div class="profile-header">
-            <h2>Meu Perfil</h2>
-            <div class="profile-pic">
-                <img src="https://via.placeholder.com/40" alt="Profile Picture">
-            </div>
-        </div>
+    <div class="container_perfil">
+      <h2>Meu Perfil</h2>
+      <div class="profile-container">
         <div class="profile-content">
-            <label for="name">Nome</label>
-            <input type="text" id="name" value="Fulano">
-            <label for="email">E-Mail</label>
-            <input type="email" id="email" value="fulano@gmail.com">
+          <h3 class="titulo_perfil">Dados da Conta</h3>
+          <label for="name">Nome</label>
+          <input class="name" type="text" id="name" value="Fulano">
+          <label for="email">E-Mail</label>
+          <div style="display: flex; flex-direction: row; align-items: center;">
+            <input class="email" type="email" id="email" value="fulano1@gmail.com">
+            <button class="botao_editar" data-bs-toggle="modal" data-bs-target="#modalEditar"><i
+                class="bi bi-pencil"></i></button>
+          </div>
+          <div class="container_button">
             <button class="update-button">Atualizar Dados</button>
+          </div>
         </div>
+      </div>
     </div>
-
+    <!-- Modal -->
+    <div class="modal fade" id="modalEditar" tabindex="-1" aria-labelledby="modalEditarLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalEditarLabel">Mudar e-mail</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Conteúdo do modal aqui -->
+            <div class="container">
+              <form>
+                <input type="text" name="novo_email" placeholder="Novo E-Mail" required>
+                <hr class="hr_modal">
+                <input type="text" name="confirme_email" placeholder="Confirme o E-Mail" required>
+                <hr class="hr_modal">
+                <input type="password" name="senha" placeholder="Digite sua Senha" required>
+                <hr class="hr_modal">
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="perfil1.html" class="botao_modal btn btn-primary" data-bs-dismiss="modal">Salvar</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--Container Main end-->
     <script src="js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
@@ -145,66 +322,4 @@
 
 </body>
 
-</html>
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mudar E-mail</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f5f5f5;
-        }
-        .container {
-            background-color: #d3d3d3;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-        .container h2 {
-            margin-bottom: 20px;
-        }
-        .container input[type="text"],
-        .container input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .container button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            background-color: #fff;
-            color: #000;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .container button:hover {
-            background-color: #f0f0f0;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h2>Mudar e-mail</h2>
-        <form>
-            <input type="text" name="novo_email" placeholder="Novo E-Mail" required>
-            <input type="text" name="confirme_email" placeholder="Confirme o E-Mail" required>
-            <input type="password" name="senha" placeholder="Digite sua Senha" required>
-            <button type="submit">Salvar</button>
-        </form>
-    </div>
-</body>
 </html>

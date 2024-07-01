@@ -8,7 +8,6 @@
    
     <link rel="stylesheet" href="css/cartao_vazio.css   ">
     <link rel="stylesheet" href="css/novo_cartao.css">
-    <link rel="stylesheet" href="css/Modal_style.css">
     <link rel="stylesheet" href="css/Conta.css">
     <link rel="stylesheet" href="css/menu-lateral.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
@@ -30,32 +29,44 @@
                   <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                  <li>
+                      <a class="dropdown-item" href="#" style="color: red;">
+                          <img src="imagem/setadespesas.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;"> Despesas
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="#" style="color: green;">
+                          <img src="imagem/setaganhos.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;"> Ganhos
+                      </a>
+                  </li>
+                  <li>
+                      <a class="dropdown-item" href="#" style="color: #00c2b7;">
+                          <img src="imagem/carteira.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;"> Despesa cartão
+                      </a>
+                  </li>
+              </ul>
             </div>
             <div class="header_toggle">
               <i class='bi bi-chevron-right' id="header-toggle"></i>
             </div>
             <div class="nav_list">
-              <a href="#" class="nav_link active">
+              <a href="menu com aviso.html" class="nav_link ">
                 <i class="bi bi-house-door"></i>
                 <span class="nav_name">Página Inicial</span>
               </a>
-              <a href="#" class="nav_link">
+              <a href="Conta.html" class="nav_link">
                 <i class="bi bi-bank"></i>
                 <span class="nav_name">Contas</span>
               </a>
-              <a href="#" class="nav_link">
+              <a href="tabela_vazia.html" class="nav_link">
                 <i class="bi bi-list-ul"></i>
                 <span class="nav_name">Transações</span>
               </a>
-              <a href="#" class="nav_link">
+              <a href="cartao_vazio.html" class="nav_link active">
                 <i class="bi bi-credit-card"></i>
                 <span class="nav_name">Cartões de Crédito</span>
               </a>
-              <a href="#" class="nav_link">
+              <a href="configuracao.html" class="nav_link">
                 <i class="bi bi-gear"></i>
                 <span class="nav_name">Configurações</span>
               </a>
@@ -73,151 +84,57 @@
     <!--Fim do menu lateral-->
 
     <!--Container Main start-->
-
-    <!--modal 1-->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog"> 
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Ganho</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div>
-              <div class="icone-input">
-                <i class="bi bi-calculator-fill"></i>
-                <input type="text" class="form-control" id="validationDefault01" value="R$0,00" required>
-                <p class="brl">BRL</p>
-              </div>
-              <hr class="linha">
-
-              <div class="p-input">
-                <p class="p-input-text">Não foi paga</p>
-                <div class="form-check form-switch">
-                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                </div>
-              </div>
-
-              <div>
-                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                <label class="btn btn-secondary btn-custom btn-secondary-custom" for="option1">Hoje</label>
-
-                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn-secondary btn-custom btn-secondary-custom" for="option2">Ontem</label>
-
-                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
-                <label class="btn btn-secondary btn-custom btn-secondary-custom" for="option3" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal2">Outros</label>
-              </div>
-
-              <hr>
-              <div class="descricao">
-                <input class="form_descricao" name="descricao" type="text" placeholder="Descrição" />
-                <hr class="linha_descricao">
-              </div>
-              <div class="form_local">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>Local</option>
-                  <option value="1">Casa</option>
-                  <option value="2">Educação</option>
-                  <option value="3">Restaurante</option>
-                </select>
-                <hr>
-              </div>
-              <div class="form_local">
-                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                  <option selected>Cartão</option>
-                  <option value="1">Visa</option>
-                  <option value="2">Mastercard</option>
-                  <option value="3">ELO</option>
-                  <option value="3">Outro</option>
-                </select>
-                <hr>
-              </div>
-              <div class="data_venc">
-                <input class="form_descricao" name="data_venc" type="text" placeholder="Dia de Vencimento" />
-                <hr class="linha_data_venc">
-              </div>
-              <div class="data_venc">
-                <input class="form_descricao" name="data_venc" type="text" placeholder="Dia de fechamento" />
-                <hr class="linha_data_venc">
-              </div>
-          </div>
-          <div class="modal-footer">
-            <a href="cartao_credito1.html"><button type="button" class="btn btn-primary">Salvar Mudanças</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--modal 2-->
-
-  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content" style="width:290px; height:450px; margin-left:100px; margin-top: 40px;">
-        <div class="modal-header1">
+<!--modal 1-->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog"> 
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Novo cartão de crédito</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="calendar">
-            <div class="month-indicator">
-              <div class="icon-left">
-              <i class="bi bi-chevron-left"></i>
+          <div>
+            <div class="icone-input">
+              <i class="bi bi-calculator-fill"></i>
+              <input type="text" class="form-control" id="validationDefault01" value="R$0,00" required>
+              <p class="brl">BRL</p>
             </div>
-              <time class="abril" datetime="2024-04"> Abril 2024</time>
-              <i class="bi bi-chevron-right"></i>
+            <hr class="linha">
+            <div class="descricao">
+              <input class="form_descricao" name="descricao" type="text" placeholder="Descrição" />
+              <hr class="linha_descricao">
             </div>
-          <div class="day-of-week">
-            <div>D</div>
-            <div>S</div>
-            <div>T</div>
-            <div>Q</div>
-            <div>Q</div>
-            <div>S</div>
-            <div>S</div>
-          </div>
-          </div>
-          
-          <div class="date-grid">
-            <button><time datetime="2024-04-01" class="number">1</time></button>
-            <button><time datetime="2024-04-02"class="number">2</time></button>
-            <button><time datetime="2024-04-03"class="number">3</time></button>
-            <button><time datetime="2024-04-04"class="number">4</time></button>
-            <button><time datetime="2024-04-05"class="number">5</time></button>
-            <button><time datetime="2024-04-06"class="number">6</time></button>
-            <button><time datetime="2024-04-07"class="number">7</time></button>
-            <button><time datetime="2024-04-08"class="number">8</time></button>
-            <button><time datetime="2024-04-09"class="number">9</time></button>
-            <button><time datetime="2024-04-10"class="number">10</time></button>
-            <button><time datetime="2024-04-11"class="number">11</time></button>
-            <button><time datetime="2024-04-12"class="number">12</time></button>
-            <button><time datetime="2024-04-13"class="number">13</time></button>
-            <button><time datetime="2024-04-14"class="number">14</time></button>
-            <button><time datetime="2024-04-15"class="number">15</time></button>
-            <button><time datetime="2024-04-16"class="number">16</time></button>
-            <button><time datetime="2024-04-17"class="number">17</time></button>
-            <button><time datetime="2024-04-18"class="number">18</time></button>
-            <button><time datetime="2024-04-19"class="number">19</time></button>
-            <button><time datetime="2024-04-20"class="number">20</time></button>
-            <button><time datetime="2024-04-21"class="number">21</time></button>
-            <button><time datetime="2024-04-22"class="number">22</time></button>
-            <button><time datetime="2024-04-23"class="number">23</time></button>
-            <button><time datetime="2024-04-24"class="number">24</time></button>
-            <button><time datetime="2024-04-25"class="number">25</time></button>
-            <button><time datetime="2024-04-26"class="number">26</time></button>
-            <button><time datetime="2024-04-27"class="number">27</time></button>
-            <button><time datetime="2024-04-28"class="number">28</time></button>
-            <button><time datetime="2024-04-29"class="number">29</time></button>
-            <button><time datetime="2024-04-30"class="number">30</time></button>
-          </div>
+            <div class="form_local">
+              <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                <option selected>Bandeira</option>
+                <option value="1">Visa</option>
+                <option value="2">Mastercard</option>
+                <option value="3">ELO</option>
+                <option value="3">Outro</option>
+              </select>
+              <hr>
+            </div>
+            <div class="descricao">
+              <input class="form_descricao" name="descricao" type="text" placeholder="Cartão" />
+              <hr class="linha_cartao">
+            </div>
+            <div class="data_venc">
+              <input class="form_descricao" name="data_venc" type="text" placeholder="Dia de Vencimento" />
+              <hr class="linha_data_venc">
+            </div>
+            <div class="data_venc">
+              <input class="form_descricao" name="data_venc" type="text" placeholder="Dia de fechamento" />
+              <hr class="linha_data_venc">
+            </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary1" data-bs-dismiss="modal">Fechar</button>
+          <a href="novo_cartao.html"><button type="button" class="btn btn-primary">Salvar</button></a>
         </div>
       </div>
     </div>
   </div>
-  <!--Fim do modal 2-->
+</div>
+
     <h2 id="titulo">CARTÕES DE CRÉDITO</h2>
     <div class="main">
       <div class="container" style="display:flex;">
@@ -235,14 +152,14 @@
               <div class="child">
                   <h1 class="icon2"><i class="bi bi-coin"></i></h1>
                   <p>Limite disponível</p>
-                  <h1 class="valor_limite">R$: 00,00</h1>
+                  <h1 class="valor_limite">R$: 0,00</h1>
 
               </div>
 
               <div class="child1" >
                   <h1 class="icon3"><i class="bi bi-cash-stack"></i></h1>
                   <p>Valor total</p>
-                  <h1 class="valor_limite">R$: 00,00</h1>
+                  <h1 class="valor_limite">R$: 0,00</h1>
               </div>
           </div>
       </div>
