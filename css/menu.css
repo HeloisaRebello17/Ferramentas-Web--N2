@@ -10,7 +10,6 @@ body {
 }
 .header {
     background-color: #EAEAEA;
-    margin-top: -30px;
 }
 
 .header .user-info {
@@ -28,8 +27,8 @@ body {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    width: 240px;
-    margin-left: 30px;
+    width: 240px; /* Largura fixa dos cards */
+    margin-left: 30px; /* Espaçamento à esquerda entre os cards */
     text-align: left;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -72,7 +71,7 @@ body {
 
 .restante_mensal{
     width:400px;
-    margin-left:50px;
+    margin-left:150px;
     margin-bottom: 50px;
     margin-top:40px;
 }
@@ -87,7 +86,8 @@ body {
     width: 23px; 
     height: 150px;
     border-radius: 13px;
-    background: linear-gradient(to bottom, #99CB85 0%, #99CB85 100%);
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #00c2b800 0%, #00c2b800 100%);
 }
 .container_mensal{
     display: flex;
@@ -200,7 +200,7 @@ body {
 
 .container_ganhos{
     width:400px;
-    margin-left: 50px;
+    margin-left: 150px;
 }
 
 .titulo_ganhos{
@@ -259,4 +259,21 @@ body {
 }
 .lucro{
     color: #737272;
+}
+
+.cartao_lucro{
+    display: flex; 
+    flex-direction: row; 
+    height: 110px;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-left: 0; /* Remove o espaçamento à esquerda */
+        margin-bottom: 20px; /* Adiciona espaçamento inferior */
+    }
+    .cartao_lucro{
+        display: flex;
+        flex-direction: column;
+    }
 }

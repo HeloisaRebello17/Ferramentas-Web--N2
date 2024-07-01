@@ -88,7 +88,6 @@ button.btn-secondary1{
 }
 
 .modal-body{
-    margin-bottom:14px !important;
     padding: 1.5rem !important;
 }
 
@@ -96,6 +95,12 @@ button.btn-secondary1{
     border-radius: 20px !important;
 }
 
+.modal-footer1{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
 .btn-primary{
     background-color: #D9D9D9 !important;
     border:none !important;
