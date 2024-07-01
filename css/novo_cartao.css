@@ -118,7 +118,6 @@ button.btn-secondary1{
 }
 
 .modal-body{
-    margin-bottom:14px !important;
     padding: 1.5rem !important;
 }
 
@@ -280,6 +279,10 @@ p{
     margin-top:30px
 }
 
+.linha_cartao{
+    margin-top:5px;
+    margin-bottom:30px
+}
 .cartao{
     margin-left:13px;
     margin-bottom:-10px
