@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px; /* This ensures the elements are aligned 50px away from the right edge */
+}
+
+
+
+.child1{
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.elemento{
+    float: left;
+    position: relative;
+    left: 50px;
+}
+
+
+
