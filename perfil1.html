@@ -37,7 +37,7 @@
     }
 
     .profile-content input {
-      width: 169px;
+      width: 163px;
       padding: 8px;
       margin-bottom: 10px;
       border: none;
@@ -95,7 +95,7 @@
     }
 
     .container_iconePerfil1 {
-      margin-left: 900px
+      margin-left: 890px
     }
 
     .bi-pencil {
@@ -146,7 +146,7 @@
     .botao_modal {
       padding: 10px 20px;
       border: none;
-      border-radius: 5px;
+      border-radius: 20px;
       background-color: #fff;
       color: #000;
       cursor: pointer;
@@ -160,26 +160,18 @@
       outline: none !important;
     }
 
-    .btn-primary:focus {
-      border: none !important;
-      box-shadow: none !important;
+    .a_modal{
+      border-radius: 20px;
     }
 
     .botao_modal:hover,
     .botao_modal:focus {
-      background-color: #f0f0f0;
-      color: #000;
-      /* Mantém a cor do texto ao passar o mouse */
       outline: none !important;
       box-shadow: transparent !important;
       border-color: transparent !important;
       /* Remove a borda de foco ao clicar */
     }
 
-    a:hover,
-    a:focus {
-      box-shadow: none;
-    }
 
     .hr_modal {
       margin-top: 0px
@@ -195,7 +187,29 @@
 
     .modal-footer {
       border: none;
+      display: flex;
+      justify-content: center;
     }
+
+    .a_perfil{
+      color:black;
+      text-decoration: none;
+    }
+    .a_perfil .fulano{
+      text-decoration: none;
+    }
+
+    .a_perfil:hover .fulano{
+      text-decoration: none;
+      color: black;
+      background-color: #eaeaea;
+    }
+    .a_perfil:hover .bi-person-circle{
+      text-decoration: none;
+      color: black;
+      background-color: #eaeaea;
+    }
+  
   </style>
 
 </head>
@@ -263,10 +277,13 @@
   <div id="content">
     <header class="header" id="header">
       <div class="container_iconePerfil1">
+        <a class="a_perfil" href="perfil.html">
         <i class="bi bi-person-circle"></i>
         <span class="fulano">Fulano</span>
+      </a>
       </div>
     </header>
+
     <!--Container Main start-->
     <div class="container_perfil">
       <h2>Meu Perfil</h2>
@@ -309,7 +326,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a href="perfil1.html" class="botao_modal btn btn-primary" data-bs-dismiss="modal">Salvar</a>
+            <a href="perfil1.html" class="a_modal"><button type="button" class="botao_modal">Save changes</button></a>
           </div>
         </div>
       </div>

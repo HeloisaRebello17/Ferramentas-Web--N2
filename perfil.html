@@ -37,7 +37,7 @@
     }
 
     .profile-content input {
-      width: 160px;
+      width: 155px;
       padding: 8px;
       margin-bottom: 10px;
       border: none;
@@ -95,7 +95,7 @@
     }
 
     .container_iconePerfil1 {
-      margin-left: 900px
+      margin-left: 890px
     }
 
     .bi-pencil {
@@ -147,9 +147,6 @@
       padding: 10px 20px;
       border: none;
       border-radius: 20px;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
       background-color: #fff;
       color: #000;
       cursor: pointer;
@@ -161,6 +158,10 @@
       transition: background-color 0.3s ease, color 0.3s ease;
       /* Transição suave de cores */
       outline: none !important;
+    }
+
+    .a_modal {
+      border-radius: 20px;
     }
 
     .botao_modal:hover,
@@ -186,6 +187,8 @@
 
     .modal-footer {
       border: none;
+      display: flex;
+      justify-content: center;
     }
   </style>
 
@@ -300,7 +303,7 @@
             </div>
           </div>
           <div class="modal-footer">
-            <a href="perfil1.html"><button type="button" class="botao_modal">Save changes</button></a>
+            <a href="perfil1.html" class="a_modal"><button type="button" class="botao_modal">Save changes</button></a>
           </div>
         </div>
       </div>

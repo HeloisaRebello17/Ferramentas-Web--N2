@@ -98,6 +98,32 @@ a:hover {
 .fulano {
     font-size: 17px;
     font-weight: bold;
+ 
+}
+
+.a_perfil {
+    color: black;
+    text-decoration: none;
+}
+
+.a_perfil .fulano {
+    text-decoration: none;
+}
+.a_perfil:hover{
+    text-decoration: none;
+    color: black;
+    background-color: #eaeaea;
+}
+.a_perfil:hover .fulano {
+    text-decoration: none;
+    color: black;
+    background-color: #eaeaea;
+}
+
+.a_perfil:hover .bi-person-circle {
+    text-decoration: none;
+    color: black;
+    background-color: #eaeaea;
 }
 
 .bi-chevron-right,
@@ -180,15 +206,16 @@ a:hover {
     margin-bottom: 20px;
     background-color: #D9D9D9;
     border-color: transparent;
-    outline:none;
+    outline: none;
 }
 
-.botao:hover{
-    outline:none !important;
+.botao:hover {
+    outline: none !important;
     border: none;
 }
-.botao:focus{
-    outline:none !important;
+
+.botao:focus {
+    outline: none !important;
     border: none;
 }
 
