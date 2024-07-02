@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 550px;
+    height: 100vh;
     background-color: #f0f0f0;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -12,30 +12,34 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
 }
 
 .login-box {
     background: #fff;
-    padding: 40px;
+    padding: 20px; /* Reduzir padding */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
 }
 
 .logo {
     width: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduzir margem inferior */
 }
 
 h2 {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduzir margem inferior */
     color: #333;
+    font-size: 24px; /* Ajustar tamanho da fonte */
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduzir espaçamento inferior */
     text-align: left;
 }
 
@@ -43,18 +47,21 @@ h2 {
     display: block;
     margin-bottom: 5px;
     color: #666;
+    font-size: 14px; /* Ajustar tamanho da fonte */
 }
 
 .input-group input[type="email"],
 .input-group input[type="password"] {
     width: 100%;
-    padding: 10px;
+    padding: 8px; /* Reduzir padding */
     border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px; /* Ajustar tamanho da fonte */
 }
 
 .input-group input[type="checkbox"] {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .login-button {
@@ -64,6 +71,8 @@ h2 {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .login-button:hover {
@@ -71,36 +80,31 @@ h2 {
 }
 
 .links {
-    margin-top: 20px;
+    margin-top: 15px; /* Reduzir margem superior */
 }
 
 .links a {
     color: #8BC34A;
     text-decoration: none;
+    font-size: 14px; /* Ajustar tamanho da fonte */
 }
 
 .links a:hover {
     text-decoration: underline;
 }
 
-#manter_conectado{
-position: relative;
-left: 25px;
-bottom: 20px;
-}
-
 /* Responsiveness */
 @media (max-width: 600px) {
     .login-box {
-        padding: 20px;
+        padding: 15px;
     }
     
     .login-button {
-        padding: 10px;
+        padding: 8px;
     }
     
     .input-group input[type="email"],
     .input-group input[type="password"] {
-        padding: 8px;
+        padding: 6px;
     }
 }
