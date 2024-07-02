@@ -92,6 +92,12 @@ h2 {
     text-decoration: underline;
 }
 
+#conectado{
+    position: relative;
+    left: 21px;
+    bottom: 19px;
+}
+
 /* Responsiveness */
 @media (max-width: 600px) {
     .login-box {
