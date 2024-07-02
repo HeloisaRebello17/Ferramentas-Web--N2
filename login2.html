@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="css/login2.css">
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h2>Cadastro</h2>
+            <form id="register-form">
+                <div class="input-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="nova-senha">Nova senha</label>
+                    <input type="password" id="nova-senha" name="nova-senha" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmar-senha">Confirmar senha</label>
+                    <input type="password" id="confirmar-senha" name="confirmar-senha" required>
+                </div>
+                <button type="submit" class="register-button">Entrar</button>
+                <div class="links">
+                    <a href="#" id="back-login">Voltar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
