@@ -18,7 +18,7 @@ body {
 
 .login-box {
     background: #fff;
-    padding: 20px; /* Reduzir padding */
+    padding: 20px; 
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -29,17 +29,17 @@ body {
 
 .logo {
     width: 50px;
-    margin-bottom: 15px; /* Reduzir margem inferior */
+    margin-bottom: 15px; 
 }
 
 h2 {
-    margin-bottom: 15px; /* Reduzir margem inferior */
+    margin-bottom: 15px; 
     color: #333;
-    font-size: 24px; /* Ajustar tamanho da fonte */
+    font-size: 24px; 
 }
 
 .input-group {
-    margin-bottom: 15px; /* Reduzir espaçamento inferior */
+    margin-bottom: 15px; 
     text-align: left;
 }
 
@@ -47,17 +47,17 @@ h2 {
     display: block;
     margin-bottom: 5px;
     color: #666;
-    font-size: 14px; /* Ajustar tamanho da fonte */
+    font-size: 14px; 
 }
 
 .input-group input[type="email"],
 .input-group input[type="password"] {
     width: 100%;
-    padding: 8px; /* Reduzir padding */
+    padding: 8px; 
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 14px; /* Ajustar tamanho da fonte */
+    font-size: 14px; 
 }
 
 .input-group input[type="checkbox"] {
@@ -80,13 +80,12 @@ h2 {
 }
 
 .links {
-    margin-top: 15px; /* Reduzir margem superior */
-}
+    margin-top: 15px; 
 
 .links a {
     color: #8BC34A;
     text-decoration: none;
-    font-size: 14px; /* Ajustar tamanho da fonte */
+    font-size: 14px; 
 }
 
 .links a:hover {
