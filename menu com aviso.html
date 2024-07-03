@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     .overlay {
+      /*PÁGINA RESPONSIVA*/
       position: absolute;
       top: 57px;
       left: 100px;
@@ -53,6 +54,12 @@
       cursor: pointer;
       color: white;
       font-size: 18px;
+    }
+
+    @media screen and (max-width: 576px) {
+      .overlay {
+        width: 180px;
+      }
     }
   </style>
 </head>
@@ -287,7 +294,7 @@
       </div>
       <!-- Fim do Modal 2 -->
       <div class="container">
-        <div style="display: flex;">
+        <div class="container_cards" style="display: flex">
           <div class="card">
             <h3 class="saldo">Saldo Atual</h3>
             <div class="value">
@@ -326,64 +333,68 @@
           </div>
         </div>
 
-        <div class="container_despesa">
-          <h4 class="titulo_despesa">Despesas</h4>
-          <div class="card card-large">
+        <div class="container_resultado">
+          <div class="container_despesaResultado">
+            <div class="container_despesa">
+              <h4 class="titulo_despesa">Despesas</h4>
+              <div class="card card-large-despesa">
+                <div class="circle-container">
+                  <div class="total_despesa">
+                    <p class="total">R$0,00</p>
+                    <p class="p_total">Total</p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-            <div class="circle-container">
-              <div class="total_despesa">
-                <p class="total">R$0,00</p>
-                <p class="p_total">Total</p>
+            <div class="restante_mensal">
+              <h4 class="titulo_restanteMensal">Restante mensal</h4>
+              <div class="card card-large">
+                <div class="container_restanteMensal">
+                  <div class="barra-bicolor-vertical-menu"></div>
+                  <div class="container_mensal">
+                    <p class="ganhos">R$0
+                    <p class="despesas">R$0</p>
+                    <p class="p_restanteMensal">_________________________</p>
+                    <p class="ganhosTotal-menu">R$0</p>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <div class="container_cartaoGanhos">
+          <div class="container_cartao">
+              <h4 class="titulo_cartao">Cartão de Crédito</h4>
+              <div class="card card-large">
 
-        <div class="restante_mensal">
-          <h4 class="titulo_restanteMensal">Restante mensal</h4>
-          <div class="card card-large">
-            <div class="container_restanteMensal">
-              <div class="barra-bicolor-vertical-menu"></div>
-              <div class="container_mensal">
-                <p class="ganhos">R$0
-                <p class="despesas">R$0</p>
-                <p>________________________________</p>
-                <p class="ganhosTotal-menu">R$0</p>
-                </p>
+                <div style="display: flex; gap: 10px;">
+                  <button
+                    style="background-color: green; color: white; padding: 5px 10px; border: none; border-radius: 5px;">Faturas
+                    abertas</button>
+                  <button style="background-color: #ddd; padding: 5px 10px; border: none; border-radius: 5px;">Faturas
+                    fechadas</button>
+                </div>
+                <div class="container_resultadoCartao">
+                  <div class="resultado_cartao">
+                    <p class="valor_cartao">
+                      <u> Você não cadastrou o cartão de crédito </u>
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="container_cartao">
-          <h4 class="titulo_cartao">Cartão de Crédito</h4>
-          <div class="card card-large">
-
-            <div style="display: flex; gap: 10px;">
-              <button
-                style="background-color: green; color: white; padding: 5px 10px; border: none; border-radius: 5px;">Faturas
-                abertas</button>
-              <button style="background-color: #ddd; padding: 5px 10px; border: none; border-radius: 5px;">Faturas
-                fechadas</button>
-            </div>
-            <div class="container_resultadoCartao">
-              <div class="resultado_cartao">
-                <p class="valor_cartao">
-                  <u> Você não cadastrou o cartão de crédito </u>
-                </p>
+              <div class="container_ganhos">
+                <h4 class="titulo_ganhos">Ganhos</h4>
+                <div class="card card-large-ganhos">
+                  <div class="circle-container-ganhos">
+                    <div class="total_ganhos">
+                      <p class="dinheiro_ganhos">R$0,00</p>
+                      <p class="p_total_ganhos">Total</p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="container_ganhos">
-          <h4 class="titulo_ganhos">Ganhos</h4>
-          <div class="card card-large">
-            <div class="circle-container-ganhos">
-              <div class="total_ganhos">
-                <p class="dinheiro_ganhos">R$0,00</p>
-                <p class="p_total_ganhos">Total</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
       <!--Container Main end-->

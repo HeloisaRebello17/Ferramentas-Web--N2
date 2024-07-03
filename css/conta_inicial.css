@@ -5,6 +5,20 @@
     left: 450px;
 }
 
+.header1{
+    width: 100%;
+    height: var(--header-height);
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem;
+    background-color: #EAEAEA;
+    z-index: var(--z-fixed);
+    transition: .5s;
+    margin-bottom: 30px;
+}
+
 .container-cartao{
     margin-top:30px
 }
@@ -232,4 +246,47 @@ p{
 
 .modal-footer{
     border-top:none !important;
+}
+
+.container{
+    display: flex;
+}
+@media (max-width: 768px) {
+    .elemento1{
+        width:200px;
+    }
+
+    .container_elemento1{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .container_conta_inicial{
+        left:0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .valor_conta{
+        font-size:25px
+    }
+    .child{
+        width:260px;
+    }
+    .child1{
+        width:260px;
+    }
+    .show {
+        position: absolute !important;
+        width: unset !important;
+    }
+   
 }

@@ -25,7 +25,7 @@ body {
 }
 .card {
     border: 1px solid #ddd;
-    border-radius: 10px;
+    border-radius: 10px !important;
     padding: 20px;
     width: 240px; /* Largura fixa dos cards */
     margin-left: 30px; /* Espaçamento à esquerda entre os cards */
@@ -71,16 +71,13 @@ body {
 
 .restante_mensal{
     width:400px;
-    margin-left:150px;
-    margin-bottom: 50px;
-    margin-top:40px;
+    margin-bottom:10px
 }
 .titulo_restanteMensal{
     margin-left: 40px;
 }
 .container_restanteMensal{
     display: flex;
-    margin-top:15px
 }
 .barra-bicolor-vertical-menu {
     width: 23px; 
@@ -94,6 +91,10 @@ body {
     flex-direction: column; 
     margin-left:20px;
 }
+.container_despesaResultado{
+    display: flex;
+    flex-direction: row;
+}
 .ganhos{
     color:#99CB85;
     font-size:20px
@@ -104,7 +105,8 @@ body {
 }
 .container_cartao{
     width:400px;
-    margin-left: -5px
+    margin-right: 200px;
+    margin-top: 20px;
 }
 .titulo_cartao{
     margin-left: 40px;
@@ -128,6 +130,13 @@ body {
 .bi-credit-card{
     font-size: 25px;
 }
+.card-large-despesa{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .circle-container {
     display: flex;
     justify-content: center;
@@ -140,7 +149,6 @@ body {
     font-size: 24px;
     font-weight: bold;
     position: relative;
-    margin-left: 80px ;
 }
 .total_despesa{
     display: flex;
@@ -159,8 +167,10 @@ body {
 
 .container_despesa{
     width: 400px;
-    margin-top:40px;
+    margin-right: 200px;
+    margin-bottom:10px
 }
+
 .despesas{
     color:#C20000;
     font-size:20px;
@@ -181,13 +191,24 @@ body {
     font-size: 24px;
     font-weight: bold;
     position: relative;
-    margin-left: 80px ;
 }
 .total_ganhos{
     display: flex;
     flex-direction:column;
     margin-top:15px;
  
+}
+.container_cartaoGanhos{
+    display: flex;
+    flex-direction: row;
+    
+}
+.card-large-ganhos{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .dinheiro_ganhos{
@@ -200,7 +221,7 @@ body {
 
 .container_ganhos{
     width:400px;
-    margin-left: 150px;
+    margin-top: 20px;
 }
 
 .titulo_ganhos{
@@ -267,13 +288,52 @@ body {
     height: 110px;
 }
 
+.container_resultado {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
 @media (max-width: 768px) {
-    .card {
-        margin-left: 0; /* Remove o espaçamento à esquerda */
-        margin-bottom: 20px; /* Adiciona espaçamento inferior */
+    .container_cards{
+        display: flexbox;
+        flex-wrap: wrap;
     }
-    .cartao_lucro{
+    .card {
+        margin-bottom: 10px;
+    }
+    .container_resultado{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .container_despesa{
+        width:250px;
+        margin-right: 0px;
+        margin-top:20px;
+    }
+    .container_despesaResultado{
         display: flex;
         flex-direction: column;
     }
+    .container_cartaoGanhos{
+        display: flex;
+        flex-direction: column;
+    }
+    .restante_mensal{
+        width:240px;
+    } 
+    .container_cartao{
+        width:240px
+    }
+    .container_ganhos{
+        width:250px
+    }
+
+    .show {
+        position: absolute !important;
+        width: unset !important;
+    }
+   
 }

@@ -10,6 +10,8 @@
     margin-left: 900px;
 }
 
+
+
 /* css referente à página de transações */
 
 
@@ -74,6 +76,19 @@
     position: relative;
     top: 18px;
     left: 16px;
+}
+.header1{
+    width: 100%;
+    height: var(--header-height);
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem;
+    background-color: #EAEAEA;
+    z-index: var(--z-fixed);
+    transition: .5s;
+    margin-bottom: 30px;
 }
 
 #valor_cartao{
@@ -288,4 +303,14 @@ tbody td{
 .menu-open{
     display: block;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .container_dois{
+        width:20px;
+        display: flex;
+    }
+    table th{
+        border: 0px solid #ccc;
+    }
 }

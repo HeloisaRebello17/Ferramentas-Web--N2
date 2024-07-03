@@ -229,3 +229,13 @@
     align-items: center;
     justify-content:space-between;
 }
+
+.valor_conta1{
+    font-size: 30px;
+    margin-left: 37px;
+}
+@media (max-width: 768px) {
+    .valor_conta1{
+        font-size:18px
+    }
+}
