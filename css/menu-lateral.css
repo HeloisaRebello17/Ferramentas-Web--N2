@@ -64,8 +64,7 @@ a:hover {
 .header .dropdown {
     margin: 0 auto;
     /* Centraliza o dropdown */
-    position: static;
-    z-index: 1050;
+    position: relative;
 }
 
 .btn-secondary {

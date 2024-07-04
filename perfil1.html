@@ -19,6 +19,11 @@
       width: 800px;
       height: 300px;
     }
+    .containerTitle{
+      margin-top:4%;
+      margin-left: 7%;
+      margin-bottom:4%;
+    }
 
     .profile-header {
       display: flex;
@@ -37,7 +42,7 @@
     }
 
     .profile-content input {
-      width: 163px;
+      width: 162px;
       padding: 8px;
       margin-bottom: 10px;
       border: none;
@@ -80,8 +85,9 @@
     }
 
     .container_perfil {
-      margin-left: 150px;
-      margin-top: 10px
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
     }
 
     .titulo_perfil {
@@ -94,9 +100,7 @@
       margin-bottom: 40px
     }
 
-    .container_iconePerfil1 {
-      margin-left: 890px
-    }
+   
 
     .bi-pencil {
       font-size: 18px;
@@ -115,7 +119,6 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 450px;
       text-align: center;
     }
 
@@ -143,6 +146,19 @@
       outline: none;
     }
 
+    .header1 {
+      width: 100%;
+      height: var(--header-height);
+      position: static;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding: 0 1rem;
+      z-index: var(--z-fixed);
+      background-color: var(--primary-bg-color);
+      transition: .5s;
+    }
+
     .botao_modal {
       padding: 10px 20px;
       border: none;
@@ -160,7 +176,7 @@
       outline: none !important;
     }
 
-    .a_modal{
+    .a_modal {
       border-radius: 20px;
     }
 
@@ -191,25 +207,11 @@
       justify-content: center;
     }
 
-    .a_perfil{
-      color:black;
-      text-decoration: none;
+    @media (max-width: 768px) {
+      .profile-container{
+        width:280px
+      }
     }
-    .a_perfil .fulano{
-      text-decoration: none;
-    }
-
-    .a_perfil:hover .fulano{
-      text-decoration: none;
-      color: black;
-      background-color: #eaeaea;
-    }
-    .a_perfil:hover .bi-person-circle{
-      text-decoration: none;
-      color: black;
-      background-color: #eaeaea;
-    }
-  
   </style>
 
 </head>
@@ -274,19 +276,18 @@
       </div>
     </nav>
   </div>
-  <div id="content">
-    <header class="header" id="header">
-      <div class="container_iconePerfil1">
-        <a class="a_perfil" href="perfil.html">
+  <div id="content" style="background-color:#eaeaea">
+    <header class="header1" id="header">
+      <div class="container_iconePerfil">
         <i class="bi bi-person-circle"></i>
-        <span class="fulano">Fulano</span>
-      </a>
+        <span class="fulano translatable" data-translate-key="userName">Fulano</span>
       </div>
     </header>
-
     <!--Container Main start-->
+    <div class="containerTitle">
+    <h2>MEU PERFIL</h2>
+  </div>
     <div class="container_perfil">
-      <h2>Meu Perfil</h2>
       <div class="profile-container">
         <div class="profile-content">
           <h3 class="titulo_perfil">Dados da Conta</h3>

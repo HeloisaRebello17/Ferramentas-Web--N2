@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Resultado das Despesas</title>
   <link rel="stylesheet" href="css/menu-lateral.css">
+  <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/despesa1.css">
   <link rel="stylesheet" href="css/ganhos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="css/menu.css">
+
 </head>
 
 <body id="body-pd">
@@ -27,7 +28,8 @@
           </button>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" href="#" style="color: red;">
+              <a class="dropdown-item" href="#" style="color: red;" data-bs-toggle="modal"
+                data-bs-target="#modalDespesas">
                 <img src="imagem/setadespesas.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
                 Despesas
               </a>
@@ -40,7 +42,8 @@
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="#" style="color: #00c2b7;">
+              <a class="dropdown-item" href="#" style="color: #00c2b7;" data-bs-toggle="modal"
+                data-bs-target="#modalDespesaCartao">
                 <img src="imagem/carteira.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
                 Despesa cartão
               </a>
@@ -51,11 +54,11 @@
           <i class='bi bi-chevron-right' id="header-toggle"></i>
         </div>
         <div class="nav_list">
-          <a href="#" class="nav_link active">
+          <a href="menu com aviso.html" class="nav_link active">
             <i class="bi bi-house-door"></i>
             <span class="nav_name">Página Inicial</span>
           </a>
-          <a href="menu com aviso.html" class="nav_link">
+          <a href="conta_inicial.html" class="nav_link">
             <i class="bi bi-bank"></i>
             <span class="nav_name">Contas</span>
           </a>
@@ -63,7 +66,7 @@
             <i class="bi bi-list-ul"></i>
             <span class="nav_name">Transações</span>
           </a>
-          <a href="novo_cartao.html" class="nav_link">
+          <a href="cartao_vazio.html" class="nav_link">
             <i class="bi bi-credit-card"></i>
             <span class="nav_name">Cartões de Crédito</span>
           </a>
@@ -75,10 +78,11 @@
       </div>
     </nav>
   </div>
-  <div id="content">
+  <div id="content" style="background-color: #eaeaea;">
     <header class="header" id="header">
       <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false">
           <span class="selected">ABRIL</span>
         </button>
         <ul class="dropdown-menu">
@@ -97,8 +101,10 @@
         </ul>
       </div>
       <div class="container_iconePerfil">
-        <i class="bi bi-person-circle"></i>
-        <span class="fulano">Fulano</span>
+        <a class="a_perfil" href="perfil.html">
+          <i class="bi bi-person-circle"></i>
+          <span class="fulano">Fulano</span>
+        </a>
       </div>
     </header>
     <!--Início do conteúdo-->
@@ -232,7 +238,7 @@
     </div>
     <!-- Fim do Modal 2 -->
     <div class="container">
-      <div class="card-resultado" style="display: flex;">
+      <div class="container_cards" style="display: flex">
         <div class="card">
           <h3 class="saldo">Saldo Atual</h3>
           <div class="value">
@@ -271,87 +277,77 @@
         </div>
       </div>
 
+      <div class="container_resultado">
+        <div class="container_despesaResultado">
+          <div class="container_despesa">
+            <h4 class="titulo_despesa">Despesas</h4>
+            <div class="card card-large-despesa">
+              <div class="circle-container">
+                <div class="total_despesa">
+                  <p class="total">R$800,00</p>
+                  <p class="p_total">Total</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <div class="container_despesa">
-        <h4 class="titulo_despesa">Despesas</h4>
-        <div class="card card-large">
-
-          <div class="circle-container">
-            <div class="total_despesa">
-              <p class="total">R$800</p>
-              <p class="p_total">Total</p>
+          <div class="restante_mensal">
+            <h4 class="titulo_restanteMensal">Restante mensal</h4>
+            <div class="card card-large">
+              <div class="container_restanteMensal">
+                <div class="barra-bicolor-vertical"></div>
+                <div class="container_mensal">
+                  <p class="ganhos">R$0
+                  <p class="despesas">R$800</p>
+                  <p class="p_restanteMensal">_________________________</p>
+                  <p class="ganhosTotal">-R$800</p>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="container_cartaoGanhos">
+        <div class="container_cartao">
+            <h4 class="titulo_cartao">Cartão de Crédito</h4>
+            <div class="card card-large">
 
-      <div class="restante_mensal">
-        <h4 class="titulo_restanteMensal">Restante mensal</h4>
-        <div class="card card-large">
-          <div class="container_restanteMensal">
-            <div class="barra-bicolor-vertical"></div>
-            <div class="container_mensal">
-              <p class="ganhos">R$0
-              <p class="despesas">R$800</p>
-              <p>________________________________</p>
-              <p class="ganhosTotal">-R$800</p>
-              </p>
+              <div style="display: flex; gap: 10px;">
+                <button
+                  style="background-color: green; color: white; padding: 5px 10px; border: none; border-radius: 5px;">Faturas
+                  abertas</button>
+                <button style="background-color: #ddd; padding: 5px 10px; border: none; border-radius: 5px;">Faturas
+                  fechadas</button>
+              </div>
+              <div class="container_resultadoCartao">
+                <div class="resultado_cartao">
+                  <p class="valor_cartao">
+                    <u> Você não cadastrou o cartão de crédito </u>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="container_cartao">
-        <h4 class="titulo_cartao">Cartão de Crédito</h4>
-        <div class="card card-large">
-
-          <div style="display: flex; gap: 10px; margin-bottom:10px">
-            <button
-              style="background-color: green; color: white; padding: 5px 10px; border: none; border-radius: 5px;">Faturas
-              abertas</button>
-            <button style="background-color: #ddd; padding: 5px 10px; border: none; border-radius: 5px;">Faturas
-              fechadas</button>
-          </div>
-          <div class="container_resultadoCartao">
-            <div class="resultado_cartao">
-              <p class="valor_cartao">
-                <u> Você ainda não cadastrou <br>o saldo do cartão de crédito </u>
-              </p>
+            <div class="container_ganhos">
+              <h4 class="titulo_ganhos">Ganhos</h4>
+              <div class="card card-large-ganhos">
+                <div class="circle-container-ganhos">
+                  <div class="total_ganhos">
+                    <p class="dinheiro_ganhos">R$0,00</p>
+                    <p class="p_total_ganhos">Total</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="container_ganhos">
-        <h4 class="titulo_ganhos">Ganhos</h4>
-        <div class="card card-large">
-          <div class="circle-container-ganhos">
-            <div class="total_ganhos">
-              <p class="dinheiro_ganhos">R$0,00</p>
-              <p class="p_total_ganhos">Total</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
-  </div>
 
 
-  </div>
+ 
   <!--Final do conteúdo-->
   <script src="js/menu.js"></script>
   <script src="js/cadastro.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // Seleciona o botão pelo ID
-      var botao = document.getElementById('meuBotao');
-
-      // Adiciona um ouvinte de evento para o evento de clique
-      botao.addEventListener('click', function () {
-        // Modifica o estilo CSS do botão
-        botao.style.backgroundColor = 'red'; // Altere 'red' para a cor desejada
-      });
-    });
-  </script>
+ 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 

@@ -134,7 +134,7 @@ body {
     width: 100%;
     max-width: 400px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     justify-content: center;
 }
 .circle-container {
@@ -207,7 +207,7 @@ body {
     width: 100%;
     max-width: 400px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
     justify-content: center;
 }
 
@@ -332,8 +332,17 @@ body {
     }
 
     .show {
-        position: absolute !important;
+        position: absolute ;
         width: unset !important;
     }
-   
+
+    .btn-secondary:focus{
+        position: relative !important;
+    }
+    .header {
+        background-color: #EAEAEA;
+    }
+   .dropdown{
+    position: relative;
+   }
 }

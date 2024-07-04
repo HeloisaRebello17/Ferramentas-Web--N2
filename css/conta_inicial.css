@@ -278,15 +278,27 @@ p{
     .valor_conta{
         font-size:25px
     }
+    .containerElementoDois{
+        display: flex;
+        flex-direction: column;
+    }
+    .containerChild{
+        display: flex;
+        flex-direction: column;
+    }
     .child{
         width:260px;
     }
     .child1{
         width:260px;
     }
+    .valor_limite{
+        font-size:25px
+    }
     .show {
         position: absolute !important;
         width: unset !important;
     }
+
    
 }

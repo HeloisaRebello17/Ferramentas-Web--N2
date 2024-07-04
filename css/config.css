@@ -8,6 +8,19 @@
     --icon-color: black; 
 }
 
+.header1{
+    width: 100%;
+    height: var(--header-height);
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem;
+    z-index: var(--z-fixed);
+    background-color: var(--primary-bg-color);
+    transition: .5s;
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -36,27 +49,23 @@ body.dark-mode {
 }
 
 .title {
-    margin-left: 70px;
-    margin-top: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
     color: var(--title-color);
-}
+    margin-bottom:4%;
+    margin-left:5%;
+    margin-top:4%;
 
-.header {
-    width: 100%;
-    height: var(--header-height);
-    position: fixed;
+}
+.container-card{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--primary-bg-color);
-    transition: .5s;
+    flex-direction: row;
+    justify-content: center;
 }
-
 .container-right {
-    padding-left: 90px;
-    padding-top: 75px;
-    padding-right: 30px;
     display: flex;
+    justify-content: flex-start;
     width: 100%;
     height: 100%;
     background-color: var(--primary-bg-color);
@@ -64,6 +73,8 @@ body.dark-mode {
 }
 
 .card {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     background-color: var(--primary-bg-color);
     border-radius: 15px;
@@ -74,6 +85,7 @@ body.dark-mode {
 .cards-combobox {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 40px;
 }
 
@@ -95,6 +107,9 @@ body.dark-mode {
     background-color: var(--container-bg-color);
 }
 
+.container_iconePerfil i {
+    color: var(--icon-color); /* Aplicando a cor do ícone */
+}
 .dropdown1 {
     display: none;
     position: absolute;
@@ -168,20 +183,45 @@ body.dark-mode {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 25px !important;
     width: 900px;
-    margin-top: 30px;
-    margin-left: 70px;
 }
 
-.container_iconePerfil1 {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin-left: 900px;
-}
-.container_iconePerfil1 i {
-    color: var(--icon-color); /* Aplicando a cor do ícone */
-}
+
 .fulano {
     margin-left:10px;
     color: var(--user-text-color); /* Usando a variável para a cor do texto do usuário */
+}
+
+@media (max-width: 768px) {
+    .idioma-moeda, .aparencia-alteracoes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+    .card{
+        width:290px
+    }
+    .combobox{
+        width: 240px;
+    }
+    .moeda{
+        margin-top:20px
+    }
+    .aparencia{
+        margin-bottom:20px
+    }
+    .title{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .container-card{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .show {
+        position: absolute !important;
+        width: unset !important;
+    }
 }

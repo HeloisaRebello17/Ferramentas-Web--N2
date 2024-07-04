@@ -2,79 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conta</title>
-   
-    <link rel="stylesheet" href="css/novo_cartao.css">
-    <link rel="stylesheet" href="css/Conta.css">
-    <link rel="stylesheet" href="css/menu-lateral.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conta</title>
 
-    <!--Menu lateral-->
-    <body id="body-pd">
-      <div class="l-navbar" id="nav-bar">
-        <nav class="nav">
-          <div>
-            <div>
-              <img class="header_img" src="imagem/logo.png" alt="">
-            </div>
-          
-              <div class="dropdown" style="position: unset">
-                <button class=" botao" id="botao"type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </div>
-            <div class="header_toggle">
-              <i class='bi bi-chevron-right' id="header-toggle"></i>
-            </div>
-            <div class="nav_list">
-              <a href="menu com aviso.html" class="nav_link ">
-                <i class="bi bi-house-door"></i>
-                <span class="nav_name">Página Inicial</span>
-              </a>
-              <a href="conta_inicial.html" class="nav_link">
-                <i class="bi bi-bank"></i>
-                <span class="nav_name">Contas</span>
-              </a>
-              <a href="tabela_vazia.html" class="nav_link">
-                <i class="bi bi-list-ul"></i>
-                <span class="nav_name">Transações</span>
-              </a>
-              <a href="novo_cartao.html" class="nav_link active">
-                <i class="bi bi-credit-card"></i>
-                <span class="nav_name">Cartões de Crédito</span>
-              </a>
-              <a href="configuracao.html" class="nav_link">
-                <i class="bi bi-gear"></i>
-                <span class="nav_name">Configurações</span>
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-      <div id="content">
-        <header class="header" id="header">
-          <div class="container_iconePerfil1">
-          <i class="bi bi-person-circle"></i>
-          <span class="fulano">Fulano</span>
+  <link rel="stylesheet" href="css/novo_cartao.css">
+  <link rel="stylesheet" href="css/Conta.css">
+  <link rel="stylesheet" href="css/menu-lateral.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<!--Página NÃO RESPONSIVA-->
+<!--Menu lateral-->
+
+<body id="body-pd">
+  <div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+      <div>
+        <div>
+          <img class="header_img" src="imagem/logo.png" alt="">
         </div>
-        </header>
+
+        <div class="dropdown" style="position: unset">
+          <button class=" botao" id="botao" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#" style="color: red;">
+                <img src="imagem/setadespesas.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
+                Despesas
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" style="color: green;">
+                <img src="imagem/setaganhos.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
+                Ganhos
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" style="color: #00c2b7;" data-bs-toggle="modal"
+                data-bs-target="#modalDespesaCartao">
+                <img src="imagem/carteira.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
+                Despesa cartão
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header_toggle">
+          <i class='bi bi-chevron-right' id="header-toggle"></i>
+        </div>
+        <div class="nav_list">
+          <a href="menu com aviso.html" class="nav_link ">
+            <i class="bi bi-house-door"></i>
+            <span class="nav_name">Página Inicial</span>
+          </a>
+          <a href="Conta.html" class="nav_link">
+            <i class="bi bi-bank"></i>
+            <span class="nav_name">Contas</span>
+          </a>
+          <a href="tabela_vazia.html" class="nav_link">
+            <i class="bi bi-list-ul"></i>
+            <span class="nav_name">Transações</span>
+          </a>
+          <a href="novo_cartao.html" class="nav_link active">
+            <i class="bi bi-credit-card"></i>
+            <span class="nav_name">Cartões de Crédito</span>
+          </a>
+          <a href="configuracao.html" class="nav_link">
+            <i class="bi bi-gear"></i>
+            <span class="nav_name">Configurações</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="content" style="background-color:#eaeaea">
+    <header class="header1" id="header">
+      <div class="container_iconePerfil">
+        <i class="bi bi-person-circle"></i>
+        <span class="fulano">Fulano</span>
+      </div>
+    </header>
     <!--Fim do menu lateral-->
 
     <!--Container Main start-->
 
     <!--modal 1-->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog"> 
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Novo cartão de crédito</h1>
@@ -114,72 +131,81 @@
                 <input class="form_descricao" name="data_venc" type="text" placeholder="Dia de fechamento" />
                 <hr class="linha_data_venc">
               </div>
-          </div>
-          <div class="modal-footer">
-            <a href="cartao_credito1.html"><button type="button" class="btn btn-primary">Salvar Mudanças</button></a>
+            </div>
+            <div class="modal-footer">
+              <a href="cartao_credito1.html"><button type="button" class="btn btn-primary">Salvar Mudanças</button></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-    <h2 id="titulo">CARTÕES DE CRÉDITO</h2>
+
     <div class="main">
-      <div class="container" style="display:flex;">
-            <div>
-              <div class="elemento" style="margin-bottom:10px">
-                  <button type="button" class="criar_conta" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <h1 class="icone"><i class="bi bi-plus-circle"></i></h1>
-                  </button>
-                  <h5>Novo cartão de crédito</h5>
-  
-              </div>
-              <!--Box para cartão-->
-              <div class="elemento_dois_novo">
-                <div class="container_CartaoNubank">
-                  <div class="cartao_nubank">
-                  <img id="nubank"   src="imagem/Nubank.png" alt="logo Nubank">
-                  <p class="cartao_p">Cartão</p>
-                </div>
-                  <i class="bi bi-trash3"></i>
-                </div>
-                <div class="container_resultado">
-                <div class="resultado_cartao">
-                  <p class="valor_cartao">Valor parcial</p>
-                  <p  class="valor">R$0</p>
-              </div>
-              <div class="resultado_cartao">
-                  <p class="valor_cartao">Fecha em</p>
-                  <p>16 de maio</p>
-              </div>
-              <p  class="saldo_cartao">R$0 de R$1000</p>
-              <div class="barra-bicolor"></div>
-              </div>
-            </div>
-          </div>
-            <div>
-              <!--Box para saldo-->
-              <div class="child">
-                  <h1 class="icon2"><i class="bi bi-coin"></i></h1>
-                  <p>Limite disponível</p>
-                  <h1 class="valor_limite">R$: 1000,00</h1>
-
-              </div>
-
-              <div class="child1" >
-                  <h1 class="icon3"><i class="bi bi-cash-stack"></i></h1>
-                  <p>Valor total</p>
-                  <h1 class="valor_limite">R$: 1000,00</h1>
-              </div>
-          </div>
+      <div class="containerCartoes">
+        <h2 id="titulo">CARTÕES DE CRÉDITO</h2>
       </div>
-            
+      <div class="container" style="display:flex;">
+        <div class="containerElemento">
+          <div class="elemento" style="margin-bottom:10px">
+            <button type="button" class="criar_conta" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <h1 class="icone"><i class="bi bi-plus-circle"></i></h1>
+            </button>
+            <h5>Novo cartão de crédito</h5>
+          </div>
+        </div>
+       
 
-    <!--Container Main end-->
+      <!--Box para saldo-->
+      <div class="container_conta_inicial">
+        <!--Box para saldo-->
+        <div class="child">
+          <h1 class="icon2"><i class="bi bi-coin"></i></h1>
+          <p class="saldo_p">Limite disponível</p>
+          <h1 class="valor_conta">R$:1000,00</h1>
 
-    <!--Js referente ao menu-->
-    <script src="js/menu.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        </div>
+
+        <div class="child1">
+          <h1 class="icon3"><i class="bi bi-cash-stack"></i></h1>
+          <p  class="saldo_p">Valor Total</p>
+          <h1 class="valor_conta">R$:1000,00</h1>
+        </div>
+      </div>
+    </div>
+
+     <!--Box para cartão-->
+     <div class="containerElementoDois">
+      <div class="elemento_dois_novo">
+        <div class="container_CartaoNubank">
+          <div class="cartao_nubank">
+            <img id="nubank" src="imagem/Nubank.png" alt="logo Nubank">
+            <p class="cartao_p">Cartão</p>
+          </div>
+          <i class="bi bi-trash3"></i>
+        </div>
+        <div class="container_resultado">
+          <div class="resultado_cartao">
+            <p class="valor_cartao">Valor parcial</p>
+            <p class="valor">R$0</p>
+          </div>
+          <div class="resultado_cartao">
+            <p class="valor_cartao">Fecha em</p>
+            <p>16 de maio</p>
+          </div>
+          <p class="saldo_cartao">R$0 de R$1000</p>
+          <div class="barra-bicolor"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+      <!--Container Main end-->
+
+      <!--Js referente ao menu-->
+      <script src="js/menu.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 </body>

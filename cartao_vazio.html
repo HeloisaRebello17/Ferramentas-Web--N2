@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conta</title>
-   
-    <link rel="stylesheet" href="css/cartao_vazio.css   ">
+    <title>Cartão de Crédito</title>
+    <link rel="stylesheet" href="css/cartao_vazio.css">
     <link rel="stylesheet" href="css/novo_cartao.css">
     <link rel="stylesheet" href="css/Conta.css">
     <link rel="stylesheet" href="css/menu-lateral.css">
@@ -74,12 +73,12 @@
           </div>
         </nav>
       </div>
-      <div id="content">
-        <header class="header" id="header">
-          <div class="container_iconePerfil1">
-          <i class="bi bi-person-circle"></i>
-          <span class="fulano">Fulano</span>
-        </div>
+      <div id="content" style="background-color:#eaeaea">
+        <header class="header1" id="header">
+          <div class="container_iconePerfil">
+            <i class="bi bi-person-circle"></i>
+            <span class="fulano">Fulano</span>
+          </div>
         </header>
     <!--Fim do menu lateral-->
 
@@ -135,20 +134,20 @@
   </div>
 </div>
 
-    <h2 id="titulo">CARTÕES DE CRÉDITO</h2>
+    
     <div class="main">
+    <div class="titulo_cartoes"><h2>CARTÕES DE CRÉDITO</h2></div>
       <div class="container" style="display:flex;">
-            <div>
               <div class="elemento" style="margin-bottom:10px">
                   <button type="button" class="criar_conta" data-bs-toggle="modal" data-bs-target="#exampleModal">
                       <h1 class="icone"><i class="bi bi-plus-circle"></i></h1>
                   </button>
                   <h5>Novo cartão de crédito</h5>
-  
-              </div>
-              <!--Box para cartão-->
+                </div>
+            
                
               <!--Box para saldo-->
+              <div class="container_conta_inicial">
               <div class="child">
                   <h1 class="icon2"><i class="bi bi-coin"></i></h1>
                   <p>Limite disponível</p>
@@ -162,6 +161,7 @@
                   <h1 class="valor_limite">R$: 0,00</h1>
               </div>
           </div>
+       
       </div>
             
 

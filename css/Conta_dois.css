@@ -306,11 +306,21 @@ tbody td{
 }
 
 @media (max-width: 768px) {
-    .container_dois{
-        width:20px;
-        display: flex;
+    table {
+        font-size: 12px; /* Reduzir o tamanho da fonte para melhor ajuste em telas menores */
     }
+    
     table th{
+        padding: 5px; /* Reduzir o espaçamento interno das células */
+    }
+    .container_dois {
+        overflow-x: auto; /* Para rolar a tabela horizontalmente em telas pequenas */
+        display: flex;
+        justify-content: flex-start;
+       
+    }
+    table td{
         border: 0px solid #ccc;
     }
+
 }
