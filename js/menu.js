@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
       // Validate that all variables exist
       if(toggle && nav && bodypd && headerpd){
           toggle.addEventListener('click', ()=>{
-              // show navbar
+              // mostrar navbar
               nav.classList.toggle('show');
-              // change icon
+              // mudar icon
               toggle.classList.toggle('bx-x');
-              // add padding to body
+              // adicionar padding no body
               bodypd.classList.toggle('body-pd');
-              // add padding to header
+              // adicionar padding no header
               headerpd.classList.toggle('body-pd');
               // Adicionar ou remover a classe de botao expandido
               botao.classList.toggle('botao-expandido');
