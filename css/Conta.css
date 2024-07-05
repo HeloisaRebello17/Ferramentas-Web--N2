@@ -132,6 +132,10 @@
     margin-left: 37px;
     font-size:30px
 }
+.valor_limite1 {
+    margin-left: 37px;
+    font-size: 30px;
+}
 /* Estilização dos ícones */
 .icon2 {
     float: right;
@@ -296,6 +300,10 @@
         width:260px;
     }
     .valor_limite{
+         font-size:22px
+    }
+    .valor_limite1{
+         margin-top:-10px;
          font-size:22px
     }
     .icon2{

@@ -85,7 +85,7 @@
     align-items: center;
     justify-content: end;
     padding: 0 1rem;
-    background-color: #EAEAEA;
+    background-color: #D0D0D0;
     z-index: var(--z-fixed);
     transition: .5s;
     margin-bottom: 30px;

@@ -5,7 +5,7 @@
     --header-height: 3rem;
     --nav-width: 79px;
     --first-color: white;
-    background-color: #EAEAEA;
+    background-color: #D0D0D0;
     --body-font: 'Open Sans', sans-serif;
     --z-fixed: 100;
 
@@ -25,7 +25,7 @@ body .body-pd {
     font-family: var(--body-font);
     font-size: 18px;
     transition: .5s;
-    background-color: #EAEAEA !important;
+    background-color: #D0D0D0 !important;
 }
 
 body {
@@ -43,8 +43,8 @@ a {
     text-decoration: none
 }
 
-a:hover {
-    background-color: white !important;
+.dropdown-item:hover {
+    background-color: white!important ;
 }
 
 .header {
@@ -55,7 +55,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: #EAEAEA;
+    background-color: #D0D0D0;
     z-index: var(--z-fixed);
     transition: .5s;
     margin-bottom: 30px;
@@ -111,18 +111,18 @@ a:hover {
 .a_perfil:hover{
     text-decoration: none;
     color: black;
-    background-color: #eaeaea;
+    background-color: #D0D0D0;
 }
 .a_perfil:hover .fulano {
     text-decoration: none;
     color: black;
-    background-color: #eaeaea;
+    background-color: #D0D0D0;
 }
 
 .a_perfil:hover .bi-person-circle {
     text-decoration: none;
     color: black;
-    background-color: #eaeaea;
+    background-color: #D0D0D0;
 }
 
 .bi-chevron-right,
@@ -300,7 +300,7 @@ a:hover {
 }
 
 .nav_link:hover {
-    color: #99cb85;
+    color: #99cb85 !important;
 }
 
 .nav_icon {
@@ -345,7 +345,7 @@ i {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
         /* padding-left: calc(var(--nav-width) + 0rem); */
-        background-color: #EAEAEA !important;
+        background-color: #D0D0D0 !important;
 
 
     }
@@ -354,7 +354,7 @@ i {
         height: calc(var(--header-height) + 1rem);
         padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
         position: static;
-        background-color: #EAEAEA;
+        background-color: #D0D0D0;
     }
 
     .header-toggle {
@@ -373,7 +373,7 @@ i {
     .body-pd {
         /* padding-left: calc(var(--nav-width) + 170px); */
         top: 0%;
-        background-color: #EAEAEA;
+        background-color: #D0D0D0;
 
     }
 
