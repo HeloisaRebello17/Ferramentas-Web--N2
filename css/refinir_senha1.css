@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #D0D0D0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.reset-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.reset-box {
+    background: #fff;
+    padding: 20px; /* Reduzir padding */
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 85px;
+}
+
+h2 {
+    margin-bottom: 15px; /* Reduzir margem inferior */
+    color: #333;
+    font-size: 24px; /* Ajustar tamanho da fonte */
+}
+
+.input-group {
+    margin-bottom: 15px; /* Reduzir espaçamento inferior */
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px; /* Ajustar tamanho da fonte */
+}
+
+.input-group input[type="email"] {
+    width: 100%;
+    padding: 8px; /* Reduzir padding */
+    border: 2px solid #7FA552;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 14px; /* Ajustar tamanho da fonte */
+}
+
+.reset-button {
+    background-color: #B3C99A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.reset-button:hover {
+    background-color: #7CB342;
+}
+
+.links {
+    margin-top: 15px; /* Reduzir margem superior */
+}
+
+.links a {
+    color: #8BC34A;
+    text-decoration: none;
+    font-size: 14px; /* Ajustar tamanho da fonte */
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .reset-box {
+        padding: 15px;
+    }
+    
+    .reset-button {
+        padding: 8px;
+    }
+    
+    .input-group input[type="email"] {
+        padding: 6px;
+    }
+}

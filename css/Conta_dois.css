@@ -3,15 +3,14 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.containerPerfil {
-    display: flex; /* Define um container flexível */
-    align-items: baseline; /* Alinha os itens ao longo da linha base */
-    justify-content: center; /* Centraliza os itens no container */
-    flex-direction: row; /* Define a direção dos itens em uma linha horizontal */
-    position: relative;
-    left: 900px;
-    gap: 10px;
+.container_iconePerfil1{
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 900px;
 }
+
+
 
 /* css referente à página de transações */
 
@@ -77,6 +76,19 @@
     position: relative;
     top: 18px;
     left: 16px;
+}
+.header1{
+    width: 100%;
+    height: var(--header-height);
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem;
+    background-color: #D0D0D0;
+    z-index: var(--z-fixed);
+    transition: .5s;
+    margin-bottom: 30px;
 }
 
 #valor_cartao{
@@ -206,7 +218,7 @@ tbody td{
 
 /* Menu dropdown */
 
-.dropdown{
+.dropdown1{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
@@ -291,4 +303,24 @@ tbody td{
 .menu-open{
     display: block;
     opacity: 1;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px; /* Reduzir o tamanho da fonte para melhor ajuste em telas menores */
+    }
+    
+    table th{
+        padding: 5px; /* Reduzir o espaçamento interno das células */
+    }
+    .container_dois {
+        overflow-x: auto; /* Para rolar a tabela horizontalmente em telas pequenas */
+        display: flex;
+        justify-content: flex-start;
+       
+    }
+    table td{
+        border: 0px solid #ccc;
+    }
+
 }
