@@ -412,6 +412,7 @@ p {
     /* Define a altura do elemento */
     position: relative;
     top: 60px;
+    right: 50px;
     /* margin-left:70px; */
     background-color: #FFFFFF;
     border-radius: 25px;
