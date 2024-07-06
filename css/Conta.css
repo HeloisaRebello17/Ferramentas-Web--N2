@@ -17,6 +17,7 @@
     height: 180px; /* Define a altura do elemento */
     position: relative;
     top: 60px;
+    margin-left:50px;
     background-color: #FFFFFF; 
     border-radius: 25px; /* Define bordas arredondadas*/
     padding: 10px;   
@@ -99,8 +100,6 @@
     top: 20px; /* Define a posição superior do elemento */
     opacity: 0px; /* Define a opacidade do elemento para 0 no caso transparente */
     float: right;
-    right: 50px;
-  
 }
 
 
@@ -119,7 +118,6 @@
     position: relative; /* Define a posição como relativa */
     top: 90px; /* Define a posição superior do elemento*/
     float: right; /* Faz o elemento flutuar à direita */
-    right: 50px;
 }
 
 
@@ -251,7 +249,6 @@
     /* Define a altura do elemento */
     position: relative;
     top: 60px;
-    right: 68px;
     /* margin-left:70px; */
     background-color: #FFFFFF;
     border-radius: 25px;

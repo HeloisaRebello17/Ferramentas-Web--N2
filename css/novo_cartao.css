@@ -412,7 +412,6 @@ p {
     /* Define a altura do elemento */
     position: relative;
     top: 60px;
-    right: 50px;
     /* margin-left:70px; */
     background-color: #FFFFFF;
     border-radius: 25px;
@@ -441,7 +440,8 @@ p {
 
     .elemento_dois_novo {
         width: 300px;
-        margin-top: 50px;
+        margin-top: 70px;
+        margin-right: 30px;
     }
 
     .containerElementoDois {
