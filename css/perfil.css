@@ -1,0 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}.container-perfil{
+    border-radius: 20px;
+    height:260px;
+    width: 1050px;
+    background-color: white;
+    margin-left:100px
+    
+}
+.principal-perfil{
+    background-color: #D0D0D0;
+    
+}

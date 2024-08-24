@@ -1,0 +1,311 @@
+/* css da pagina daqui para baixo*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    margin-top: 40px; /* Adiciona uma margem superior de 40px */
+}
+
+
+
+
+/* Child para saldo e cartão */
+.elemento_dois {
+    width: 350px; /* Define a largura do elemento */
+    height: 180px; /* Define a altura do elemento */
+    position: relative;
+    top: 60px;
+    margin-left:50px;
+    background-color: #FFFFFF; 
+    border-radius: 25px; /* Define bordas arredondadas*/
+    padding: 10px;   
+}
+
+/* id's dos elementos do child */
+
+
+.atual{
+    margin-left:10px;
+    color: #737272;
+}
+
+.valorAtual{
+    margin-right:10px;
+    color: green;
+}
+
+.container_Atual{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container_Previsto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.valorPrevisto{
+    margin-right:10px;
+    color: green;
+}
+
+.Previsto{
+   margin-left:10px;
+   color: #737272;
+}
+
+.container_Saldo{
+    margin-top:10px
+}
+
+.elemento p {
+    margin-top: 40px;
+}
+
+.elemento i {
+    margin: 50px;
+}
+
+.bi-plus-circle {
+    font-size: 40px;
+}
+
+.icone {
+    margin-top: 70px
+}
+
+.title {
+    font-size: 30px; /* Define o tamanho da fonte para 30px */
+    width: 146px; 
+    height: 42px;
+    position: relative; /* Adiciona posicionamento relativo */
+    top: 151px; /* Define a posição superior do elemento */
+    left: 308px; /* Define a posição à esquerda do elemento */
+    padding-left: 250px; /* Adiciona um preenchimento à esquerda de 250px */
+    padding-top: 40px; /* Adiciona um preenchimento superior de 40px */
+}
+
+.child {
+    width: 408px;
+    height: 110px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    position: relative;/* Adiciona posicionamento relativo para poder utilizar top */
+    top: 20px; /* Define a posição superior do elemento */
+    opacity: 0px; /* Define a opacidade do elemento para 0 no caso transparente */
+    float: right;
+}
+
+
+
+.child p {
+    margin-left: 40px; /* Adiciona uma margem a esquerda dentro do elemento child */
+    margin-top: 15px; /* Adiciona uma margem superior dentro do elemento child */
+    color: gray; 
+}
+
+.child1 {
+    width: 408px; 
+    height: 110px;
+    background-color: #FFFFFF; 
+    border-radius: 25px; 
+    position: relative; /* Define a posição como relativa */
+    top: 90px; /* Define a posição superior do elemento*/
+    float: right; /* Faz o elemento flutuar à direita */
+}
+
+
+.child1 p {
+    margin-left: 40px;
+    margin-top: 15px;
+    color: gray;
+}
+
+.valor_limite {
+    margin-left: 37px;
+    font-size:30px
+}
+.valor_limite1 {
+    margin-left: 37px;
+    font-size: 30px;
+}
+/* Estilização dos ícones */
+.icon2 {
+    float: right;
+    margin: 35px;
+    margin-right: 55px;
+}
+
+.bi-coin{
+    color: #CD85CA;
+    font-size: 35px
+}
+
+.icon3 {
+    float: right;
+    margin-top: 35px;
+    margin-right: 55px;
+}
+
+.bi-cash-stack{
+    color: #CD85CA;
+    font-size: 35px
+}
+
+.containerPerfil {
+    display: flex; /* Define um container flexível */
+    align-items: baseline; /* Alinha os itens ao longo da linha base */
+    justify-content: center; /* Centraliza os itens no container */
+    flex-direction: row; /* Define a direção dos itens em uma linha horizontal */
+    position: relative;
+    left: 900px;
+    gap: 10px;
+}
+
+
+.criar_conta {
+    background-color: white; 
+    border: none; /* Remove a borda */
+    padding: 0%; /* Remove o preenchimento interno */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+.criar_conta:focus {
+    outline: none; /* Remove o contorno ao focar */
+    box-shadow: none; /* Remove a sombra da caixa ao focar */
+}
+
+
+
+#nub{
+    width: 35px;
+    height: 35px;
+}
+
+.bi-trash3{
+    font-size:21px;
+    margin-right:10px
+}
+
+.cartao_nubank{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left:10px
+}
+
+#nubank{
+    width:40px;
+    height:40px;
+}
+
+.cartao_p{
+    font-size:18px;
+    font-weight:bold;
+    margin-left:10px;
+    margin-top: 15px;
+}
+
+.container_CartaoNubank{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.valor_conta1{
+    font-size: 30px;
+    margin-left: 37px;
+}
+
+.resultado_cartao1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:24px
+}
+
+.child_p {
+    margin-left: 17px;
+    color: gray;
+    font-size: 18px;
+}
+
+.valor_child{
+    color: #008000;
+    font-size:18px;
+    margin-right: 10px;
+}
+
+.elemento_dois_novo1{
+    height: 220px;
+    width: 400px;
+    /* Define a altura do elemento */
+    position: relative;
+    top: 60px;
+    /* margin-left:70px; */
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    /* Define bordas arredondadas*/
+    padding: 10px;
+}
+
+
+.containerElementoUm {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 7%;
+}
+
+.containerContas{
+    display: flex;
+    flex-direction: row;
+    margin-left: 7%;
+    margin-bottom: 3% ;
+}
+@media (max-width: 768px) {
+    .valor_conta1{
+        font-size:18px
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .elemento_dois_novo1 {
+        width: 300px;
+        margin-top: 70px;
+        margin-right: 30px;
+    }
+    .containerElementoUm{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .child{
+        width:260px;
+    }
+    .child1{
+        width:260px;
+    }
+    .valor_limite{
+         font-size:22px
+    }
+    .valor_limite1{
+         margin-top:-10px;
+         font-size:22px
+    }
+    .icon2{
+        margin-right: 25px;
+    }
+}

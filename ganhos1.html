@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado dos Ganhos</title>
+  <link rel="stylesheet" href="css/menu-lateral.css">
+  <link rel="stylesheet" href="css/ganhos1.css">
+  <link rel="stylesheet" href="css/cartao_credito.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body id="body-pd">
+  <div class="l-navbar" id="nav-bar">
+    <nav class="nav">
+      <div>
+        <div>
+          <img class="header_img" src="imagem/logo.png" alt="">
+        </div>
+        <div class="dropdown" style="position: unset">
+          <button class=" botao" id="botao" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="icon-btn"> <i class="bi bi-plus" id="btn-icon"></i></div>
+          </button>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#" style="color: red;">
+                <img src="imagem/setadespesas.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
+                Despesas
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" style="color: green;">
+                <img src="imagem/setaganhos.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
+                Ganhos
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#" style="color: #00c2b7;" data-bs-toggle="modal"
+                data-bs-target="#modalDespesaCartao">
+                <img src="imagem/carteira.png" alt="" style="width: 16px; height: 16px; vertical-align: middle;">
+                Despesa cartão
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header_toggle">
+          <i class='bi bi-chevron-right' id="header-toggle"></i>
+        </div>
+        <div class="nav_list">
+          <a href="menu com aviso.html" class="nav_link active">
+            <i class="bi bi-house-door"></i>
+            <span class="nav_name">Página Inicial</span>
+          </a>
+          <a href="Conta.html" class="nav_link">
+            <i class="bi bi-bank"></i>
+            <span class="nav_name">Contas</span>
+          </a>
+          <a href="tabela_vazia.html" class="nav_link">
+            <i class="bi bi-list-ul"></i>
+            <span class="nav_name">Transações</span>
+          </a>
+          <a href="novo_cartao.html" class="nav_link">
+            <i class="bi bi-credit-card"></i>
+            <span class="nav_name">Cartões de Crédito</span>
+          </a>
+          <a href="configuracao.html" class="nav_link">
+            <i class="bi bi-gear"></i>
+            <span class="nav_name">Configurações</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div id="content">
+    <header class="header" id="header">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="selected">ABRIL</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Janeiro</a></li>
+          <li><a class="dropdown-item" href="#">Fevereiro</a></li>
+          <li><a class="dropdown-item" href="#">Março</a></li>
+          <li><a class="dropdown-item" href="#">Abril</a></li>
+          <li><a class="dropdown-item" href="#">Maio</a></li>
+          <li><a class="dropdown-item" href="#">Junho</a></li>
+          <li><a class="dropdown-item" href="#">Julho</a></li>
+          <li><a class="dropdown-item" href="#">Agosto</a></li>
+          <li><a class="dropdown-item" href="#">Setembro</a></li>
+          <li><a class="dropdown-item" href="#">Outubro</a></li>
+          <li><a class="dropdown-item" href="#">Novembro</a></li>
+          <li><a class="dropdown-item" href="#">Dezembro</a></li>
+        </ul>
+      </div>
+      <div class="container_iconePerfil">
+        <a href="perfil.html" style=" all: initial; display: flex; font-family: 'Open Sans', sans-serif; align-items: center;">
+        <i class="bi bi-person-circle"></i>
+        <span class="fulano">Fulano</span>
+        </a>
+      </div>
+    </header>
+    <!--Início do conteúdo-->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modalDespesaCartao" tabindex="-1" aria-labelledby="modalDespesaCartaoLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Nova despesa cartão de crédito</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="icone-input">
+                <i class="bi bi-calculator-fill"></i>
+                <input type="text" class="form-control" id="validationDefault01" value="R$0,00" required>
+                <p class="brl">BRL</p>
+              </div>
+              <hr class="linha">
+
+              <div class="p-input">
+                <p class="p-input-text">Não foi paga</p>
+                <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                </div>
+              </div>
+
+              <div>
+                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                <label class="btn btn-secondary btn-custom btn-secondary-custom" for="option1">Hoje</label>
+
+                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                <label class="btn btn-secondary btn-custom btn-secondary-custom" for="option2">Ontem</label>
+
+                <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                <label class="btn btn-secondary btn-custom btn-secondary-custom" for="option3" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal2">Outros</label>
+              </div>
+
+              <hr>
+              <div class="descricao">
+                <input class="form_descricao" name="descricao" type="text" placeholder="Descrição" />
+                <hr class="linha_descricao">
+              </div>
+              <div class="form_local">
+                <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Local</option>
+                  <option value="1">Casa</option>
+                  <option value="2">Educação</option>
+                  <option value="3">Restaurante</option>
+                </select>
+                <hr>
+              </div>
+              <div class="container-cartao">
+                <p class="cartao">Cartão</p>
+                <hr>
+              </div>
+              <div class="data_venc">
+                <input class="form_descricao" name="data_venc" type="text" placeholder="16 de maio" />
+                <hr class="linha_data_venc">
+              </div>
+            </div>
+            <div class="modal-footer1">
+              <a href="cartao_credito1.html"><button type="button" class="btn btn-primary">Save changes</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim do Modal 1 -->
+    <!-- Modal 2 -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width:290px; height:450px; margin-left:100px; margin-top: 40px;">
+          <div class="modal-header1">
+          </div>
+          <div class="modal-body">
+            <div class="calendar">
+              <div class="month-indicator">
+                <div class="icon-left">
+                  <i class="bi bi-chevron-left"></i>
+                </div>
+                <time class="abril" datetime="2024-04"> Abril 2024</time>
+                <i class="bi bi-chevron-right"></i>
+              </div>
+              <div class="day-of-week">
+                <div>D</div>
+                <div>S</div>
+                <div>T</div>
+                <div>Q</div>
+                <div>Q</div>
+                <div>S</div>
+                <div>S</div>
+              </div>
+            </div>
+
+            <div class="date-grid">
+              <button><time datetime="2024-04-01" class="number">1</time></button>
+              <button><time datetime="2024-04-02" class="number">2</time></button>
+              <button><time datetime="2024-04-03" class="number">3</time></button>
+              <button><time datetime="2024-04-04" class="number">4</time></button>
+              <button><time datetime="2024-04-05" class="number">5</time></button>
+              <button><time datetime="2024-04-06" class="number">6</time></button>
+              <button><time datetime="2024-04-07" class="number">7</time></button>
+              <button><time datetime="2024-04-08" class="number">8</time></button>
+              <button><time datetime="2024-04-09" class="number">9</time></button>
+              <button><time datetime="2024-04-10" class="number">10</time></button>
+              <button><time datetime="2024-04-11" class="number">11</time></button>
+              <button><time datetime="2024-04-12" class="number">12</time></button>
+              <button><time datetime="2024-04-13" class="number">13</time></button>
+              <button><time datetime="2024-04-14" class="number">14</time></button>
+              <button><time datetime="2024-04-15" class="number">15</time></button>
+              <button><time datetime="2024-04-16" class="number">16</time></button>
+              <button><time datetime="2024-04-17" class="number">17</time></button>
+              <button><time datetime="2024-04-18" class="number">18</time></button>
+              <button><time datetime="2024-04-19" class="number">19</time></button>
+              <button><time datetime="2024-04-20" class="number">20</time></button>
+              <button><time datetime="2024-04-21" class="number">21</time></button>
+              <button><time datetime="2024-04-22" class="number">22</time></button>
+              <button><time datetime="2024-04-23" class="number">23</time></button>
+              <button><time datetime="2024-04-24" class="number">24</time></button>
+              <button><time datetime="2024-04-25" class="number">25</time></button>
+              <button><time datetime="2024-04-26" class="number">26</time></button>
+              <button><time datetime="2024-04-27" class="number">27</time></button>
+              <button><time datetime="2024-04-28" class="number">28</time></button>
+              <button><time datetime="2024-04-29" class="number">29</time></button>
+              <button><time datetime="2024-04-30" class="number">30</time></button>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary1" data-bs-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fim do Modal 2 -->
+    <div class="container">
+      <div class="container_cards" style="display: flex">
+        <div class="card">
+          <h3 class="saldo">Saldo Atual</h3>
+          <div class="value">
+            R$ 1200,00
+            <div class="icon-saldo">
+              <i class="bi bi-bank"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="despesa">Despesas</h3>
+          <div class="value">
+            R$ 800,00
+            <div class="icon-despesa">
+              <i class="bi bi-arrow-down"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="cartao">Cartão de Crédito</h3>
+          <div class="value">
+            R$ 0,00
+            <div class="icon-cartao">
+              <i class="bi bi-credit-card"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h3 class="lucro">Lucro</h3>
+          <div class="value">
+            R$ 1000,00
+            <div class="icon-lucro">
+              <i class="bi bi-arrow-up"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container_resultado">
+        <div class="container_despesaResultado">
+          <div class="container_despesa">
+            <h4 class="titulo_despesa">Despesas</h4>
+            <div class="card card-large-despesa">
+              <div class="circle-container">
+                <div class="total_despesa">
+                  <p class="total">R$800,00</p>
+                  <p class="p_total">Total</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="restante_mensal">
+            <h4 class="titulo_restanteMensal">Restante mensal</h4>
+            <div class="card card-large">
+              <div class="container_restanteMensal">
+                <div class="barra-bicolor-vertical"></div>
+                <div class="container_mensal">
+                  <p class="ganhos">R$1000
+                  <p class="despesas">R$800</p>
+                  <p class="p_restanteMensal">_________________________</p>
+                  <p class="ganhosTotal">R$200</p>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container_cartaoGanhos">
+        <div class="container_cartao">
+            <h4 class="titulo_cartao">Cartão de Crédito</h4>
+            <div class="card card-large">
+
+              <div style="display: flex; gap: 10px;">
+                <button
+                  style="background-color: green; color: white; padding: 5px 10px; border: none; border-radius: 5px;">Faturas
+                  abertas</button>
+                <button style="background-color: #ddd; padding: 5px 10px; border: none; border-radius: 5px;">Faturas
+                  fechadas</button>
+              </div>
+              <div class="container_resultadoCartao">
+                <div class="resultado_cartao">
+                  <p class="valor_cartao">
+                    <u> Você não cadastrou o cartão de crédito </u>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="container_ganhos">
+              <h4 class="titulo_ganhos">Ganhos</h4>
+              <div class="card card-large-ganhos">
+                <div class="circle-container-ganhos">
+                  <div class="total_ganhos">
+                    <p class="dinheiro_ganhos">R$1000,00</p>
+                    <p class="p_total_ganhos">Total</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+
+
+    </div>
+    <!--Final do conteúdo-->
+    <script src="js/menu.js"></script>
+    <script src="js/cadastro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</body>
+
+</html>

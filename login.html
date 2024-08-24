@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="imagem/logo.png" type="imagem">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="imagem/logo.png" alt="Logo" class="logo">
+            <h2>Acesse sua conta</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" id="manter-conectado" name="manter-conectado">
+                    <label id="conectado" for="manter-conectado">Manter-me conectado</label>
+                </div>
+                <button type="submit" class="login-button" id="login-button">Fazer Login</button>
+                <div class="links">
+                    <a href="redefinir_senha1.html" id="forgot-password">Esqueci minha senha</a>
+                    <br><br>
+                    <a href="login2.html" id="create-account">Criar nova conta</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

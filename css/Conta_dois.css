@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container_iconePerfil1{
+    display:flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 900px;
+}
+
+
+
+/* css referente à página de transações */
+
+
+.container{
+    display: flex; /* Adiciona uma propriedade flexível */
+    gap: 100px;
+    justify-content: center;
+    align-items: start; /* Propriedade que que faz com que as div's fiquem no início da página */
+    flex-flow: row nowrap; /* Faz com que o tamanho dos elementos child não se adequem ao tamanho da tela */
+    margin-top: 15px;
+}
+
+/* Estilização dos elementos child */
+
+#child_saldo{
+    width: 263px;
+    height: 111px;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+}
+
+#saldo_atual{
+    position: relative;
+    left: 17px;
+    top: 20px;
+}
+
+#valor_saldo{
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+
+
+#child_despesas{
+    width: 263px;
+    height: 111px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+
+#despesas{
+    position: relative;
+    left: 15px;
+    top: 17px;
+}
+
+#valor_despesas{
+    position: relative;
+    left: 15px;
+    top: 17px;
+}
+
+#cartao_de_credito{
+    width: 263px;
+    height: 111px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+
+#cartao{
+    position: relative;
+    top: 18px;
+    left: 16px;
+}
+.header1{
+    width: 100%;
+    height: var(--header-height);
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 1rem;
+    background-color: #D0D0D0;
+    z-index: var(--z-fixed);
+    transition: .5s;
+    margin-bottom: 30px;
+}
+
+#valor_cartao{
+    position: relative;
+    top: 17px;
+    left: 15px;
+}
+
+#ganhos{
+    width: 263px;
+    height: 111px;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+
+#Ganhos{
+    position: relative;
+    top: 17px;
+    left: 16px;
+}
+
+#valor_ganhos{
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+/* css do container tabela */
+
+.container_dois{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#mes{
+    position: relative;
+    left: 50%;
+    top: 10px;
+
+}
+/*Estilização do dropdown*/
+.btn-secondary {
+    color: black !important;
+    background-color: transparent !important; 
+    border: none !important;
+    border-color: transparent !important;
+    margin-top:20px;
+}
+
+.btn-secondary:focus{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.selected{
+    color:black;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+/* Estilização da tabela  */
+table th{
+    border: 5px solid #ccc;
+    height:65px;
+}
+ table td{
+    border: 5px solid white;
+    padding: 5px;
+}
+
+table{
+    text-align: center;
+    width: 87%;
+}
+
+thead{
+    background: #ccc;
+}
+
+table h5{
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top:10px
+}
+
+tbody td{
+    padding: 30px;
+    background-color: white;
+}
+
+.td-icons{
+    position: relative;
+}
+
+.icons-tabela{
+    position: absolute; 
+    bottom: 0; 
+    right: 10px;
+}
+
+.bi-trash{
+    font-size:20px;
+}
+
+.bi-pencil{
+    font-size:20px;
+}
+
+#mensalidade{
+    color: red;
+}
+
+#bolsa{
+    color: green;
+}
+
+#almoco{
+    color: red;
+}
+
+/* Menu dropdown */
+
+.dropdown1{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 15em;
+    position: relative;
+    
+}
+
+.dropdown *{
+        box-sizing: border-box;
+}
+
+.select{
+    
+    color: #090909;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.select-clicked{
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover{
+    background: #322741;
+}
+
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #FFF;
+    transition: 0.3s;
+}
+
+.caret-rotate{
+    transform: rotate(180deg);
+}
+
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0 0.5em  1em rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+    color: #ccc;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background: #2a2d35;
+}
+
+.actived{
+    background: #23242a;
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px; /* Reduzir o tamanho da fonte para melhor ajuste em telas menores */
+    }
+    
+    table th{
+        padding: 5px; /* Reduzir o espaçamento interno das células */
+    }
+    .container_dois {
+        overflow-x: auto; /* Para rolar a tabela horizontalmente em telas pequenas */
+        display: flex;
+        justify-content: flex-start;
+       
+    }
+    table td{
+        border: 0px solid #ccc;
+    }
+
+}

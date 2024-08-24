@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Container restante mensal*/
+
+
+.barra-bicolor-vertical {
+    width: 23px; 
+    height: 150px;
+    border-radius: 13px;
+    background: linear-gradient(to bottom, #99CB85 20%, #C20000 20%);
+}
+
+
+
+
+/* Container Ganhos*/
+
+.ganhosTotal{
+    color:#99CB85;
+    font-size:20px;
+}
+
+.header {
+    background-color: #D0D0D0;
+}
